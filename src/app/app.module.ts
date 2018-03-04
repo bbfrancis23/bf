@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
+import { MilieuModule } from './milieu/milieu.module';
+import { AeoModule } from './aeo/aeo.module';
 
 
 @NgModule({
@@ -12,7 +14,9 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MilieuModule,
+    AeoModule
   ],
   providers: [],
   bootstrap: [AppComponent]
