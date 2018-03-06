@@ -1,0 +1,26 @@
+
+.left-sidebar{
+  position:fixed;
+  width: 224px;
+  top: 0;
+  height: 100vh;
+  transition: all .5s ease-in-out;
+  border-right:  1px solid grey;
+  z-index: 1;
+  background-color: red;
+}
+
+#sidebar-control{
+  position: absolute;
+  top: 20px;
+  right: -65px;
+  z-index: 1;
+}
+
+.hide-left{
+  left: -224px;
+}
+
+.show-left{
+  left: 0px;
+}

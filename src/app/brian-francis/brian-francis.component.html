@@ -1,1 +1,11 @@
-<aeo-toggle-button #atb ><mat-icon>{{atb.toggleButton.checked ? 'close' : 'menu'}}</mat-icon></aeo-toggle-button>
+<div class="left-sidebar" [ngClass]="{'hide-left': hideLeft, 'show-left': !hideLeft}">
+  <button id="sidebar-control" mat-fab (click)="hideLeft=!hideLeft" ><mat-icon aria-label="Menu">{{menuIcon}}</mat-icon></button>
+  <a mat-list-item routerLink="." *ngFor="let nav of fillerNav">{{nav}}</a>
+
+
+</div>
+
+
+<div class="content">
+  <p *ngFor="let content of fillerContent">{{content}} Hello McFly</p>
+</div>
