@@ -11,9 +11,8 @@ import { AppComponent } from './app.component';
 import { MilieuModule } from './milieu/milieu.module';
 import { AeoModule } from './aeo/aeo.module';
 import { BrianFrancisComponent } from './brian-francis/brian-francis.component';
-import { MediaMatcher } from '@angular/cdk/layout';
-import { ViewPortService } from './aeo/view-port.service';
 
+import { LayoutModule } from '@angular/cdk/layout';
 
 @NgModule({
   declarations: [
@@ -30,12 +29,13 @@ import { ViewPortService } from './aeo/view-port.service';
     MatSidenavModule,
     MatToolbarModule,
     MilieuModule,
+    LayoutModule,
     AeoModule
   ],
   exports: [
     AeoModule
   ],
-  providers: [ViewPortService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
