@@ -12,6 +12,7 @@ import { MilieuModule } from './milieu/milieu.module';
 import { AeoModule } from './aeo/aeo.module';
 import { BrianFrancisComponent } from './brian-francis/brian-francis.component';
 import { MediaMatcher } from '@angular/cdk/layout';
+import { ViewPortService } from './aeo/view-port.service';
 
 
 @NgModule({
@@ -34,7 +35,7 @@ import { MediaMatcher } from '@angular/cdk/layout';
   exports: [
     AeoModule
   ],
-  providers: [MediaMatcher],
+  providers: [ViewPortService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
