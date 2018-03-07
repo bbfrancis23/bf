@@ -11,6 +11,7 @@ export class BrianFrancisComponent implements OnDestroy {
 
   isHandsetLandscape = false;
   observerSubscription: Subscription;
+  hideLeft = false;
 
   constructor(breakpointObserver: BreakpointObserver) {
     breakpointObserver.observe(Breakpoints.HandsetLandscape).subscribe(result => this.isHandsetLandscape = result.matches);

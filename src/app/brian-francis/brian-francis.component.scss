@@ -7,7 +7,7 @@
   transition: all .5s ease-in-out;
   border-right:  1px solid grey;
   z-index: 1;
-  background-color: red;
+  background-color: white
 }
 
 #sidebar-control{
@@ -23,4 +23,35 @@
 
 .show-left{
   left: 0px;
+}
+
+.toolbar{
+  width: 80%;
+  align: left;
+}
+.monogram{
+height: 224px;
+  line-height: 224px;
+  vertical-align: middle;
+  background-color: blue;
+  text-align: center;
+  font-size: 75px;
+  color: white;
+  //border: 5px solid white;
+  outline: 10px solid white;
+  outline-offset: -40px;
+}
+
+.hero{
+  position: relative;
+display: block;
+width: 100%;
+height: 370px;
+background: url('/assets/hero.jpg') no-repeat;
+background-size: cover;
+background-position: center center;
+background-attachment: fixed;
+
+-webkit-filter: blur(5px);
+  filter: blur(5px);
 }

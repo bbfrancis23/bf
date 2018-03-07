@@ -1,1 +1,38 @@
-{{isHandsetLandscape}}
+<div class="left-sidebar" [ngClass]="{'hide-left': hideLeft, 'show-left': !hideLeft}" *ngIf="!isHandsetLandscape">
+  <button id="sidebar-control" mat-fab (click)="hideLeft = !hideLeft" ><mat-icon>{{hideLeft ? 'menu' : 'close'}}</mat-icon></button>
+
+
+
+    <div class="monogram">BF</div>
+    <mat-list>
+      <mat-list-item>
+        <button mat-icon-button><mat-icon>home</mat-icon> Home</button>
+      </mat-list-item>
+      <mat-list-item>
+        <button mat-icon-button><mat-icon>account_circle</mat-icon> About</button>
+      </mat-list-item>
+      <mat-list-item>
+        <button mat-icon-button><mat-icon>settings</mat-icon> Skills</button>
+      </mat-list-item>
+      <mat-list-item>
+        <button mat-icon-button><mat-icon>work</mat-icon> Experince</button>
+      </mat-list-item>
+      <mat-list-item>
+        <button mat-icon-button><mat-icon>favorites</mat-icon> Interests</button>
+      </mat-list-item>
+      <mat-list-item>
+        <button mat-icon-button><mat-icon>feedback</mat-icon> Testimonial</button>
+      </mat-list-item>
+      <mat-list-item>
+        <button mat-icon-button><mat-icon>web</mat-icon> Websites</button>
+      </mat-list-item>
+    </mat-list>
+
+</div>
+
+  <div class="hero"></div>
+
+  <!--<mat-toolbar color="primary" *ngIf="isHeadsetLandscape">
+    <span>Home</span>
+    <span>About</span>
+  </mat-toolbar>-->
