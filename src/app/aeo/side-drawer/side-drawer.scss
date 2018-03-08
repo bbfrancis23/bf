@@ -1,0 +1,33 @@
+$drawer-width: 224px;
+
+.side-drawer{
+  position:fixed;
+  width: $drawer-width;
+  top: 0;
+  height: 100vh;
+  transition: all .5s ease-in-out;
+  border-right:  1px solid grey;
+  background-color: white
+}
+
+#sidebar-control{
+  position: absolute;
+  top: 20px;
+  right: -65px;
+}
+
+.hide-left{
+  //left: -$drawer-width;
+}
+
+.show-left{
+  //left: 0px;
+}
+
+
+
+#sidebar-control{
+  position: absolute;
+  top: 20px;
+  right: -65px;
+}

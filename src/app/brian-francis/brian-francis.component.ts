@@ -9,16 +9,15 @@ import { Subscription } from 'rxjs/Subscription';
 })
 export class BrianFrancisComponent implements OnDestroy {
 
-  isHandsetLandscape = false;
-  observerSubscription: Subscription;
-  hideLeft = false;
+  //isHandsetLandscape = false;
+  //observerSubscription: Subscription;
 
   constructor(breakpointObserver: BreakpointObserver) {
-    breakpointObserver.observe(Breakpoints.HandsetLandscape).subscribe(result => this.isHandsetLandscape = result.matches);
+    //breakpointObserver.observe(Breakpoints.HandsetLandscape).subscribe(result => this.isHandsetLandscape = result.matches);
   }
 
   ngOnDestroy() {
-    this.observerSubscription.unsubscribe();
+    //this.observerSubscription.unsubscribe();
   }
 
 }

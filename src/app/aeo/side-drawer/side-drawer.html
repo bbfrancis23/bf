@@ -1,0 +1,4 @@
+<div class="side-drawer" [style.left.px]="left" >
+  <button id="sidebar-control" mat-fab (click)="closed = !closed" ><mat-icon>{{hideLeft ? 'menu' : 'close'}}</mat-icon></button>
+  <ng-content></ng-content>
+</div>

@@ -5,7 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 
-import { MatButtonModule, MatIconModule, MatListModule, MatSidenavModule, MatToolbarModule } from '@angular/material';
+import { MatButtonModule, MatCardModule, MatIconModule, MatListModule, MatSidenavModule, MatToolbarModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { MilieuModule } from './milieu/milieu.module';
@@ -25,6 +25,7 @@ import { LayoutModule } from '@angular/cdk/layout';
     AppRoutingModule,
     MatIconModule,
     MatButtonModule,
+    MatCardModule,
     MatListModule,
     MatSidenavModule,
     MatToolbarModule,
