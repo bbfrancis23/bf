@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AeoSideDrawer } from './side-drawer/side-drawer';
+import { AeoViewPort } from './view-port';
 
 import { MatIconModule, MatListModule, MatButtonModule } from '@angular/material';
 
@@ -11,8 +12,8 @@ import { MatIconModule, MatListModule, MatButtonModule } from '@angular/material
     MatListModule,
     MatButtonModule
   ],
-  declarations: [AeoSideDrawer],
-  exports: [AeoSideDrawer]
+  declarations: [AeoSideDrawer, AeoViewPort],
+  exports: [AeoSideDrawer, AeoViewPort]
 })
 export class AeoModule {
 }

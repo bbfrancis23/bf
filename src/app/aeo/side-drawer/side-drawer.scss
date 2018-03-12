@@ -1,33 +1,21 @@
-$drawer-width: 224px;
-
-.side-drawer{
+.aeo-sidedrawer-container{
   position:fixed;
-  width: $drawer-width;
   top: 0;
   height: 100vh;
   transition: all .5s ease-in-out;
   border-right:  1px solid grey;
-  background-color: white
+  background-color: white;
+  z-index: 1;
+  width: 225px;
+  left: 0;
 }
 
-#sidebar-control{
+.aeo-sidedrawer-control{
   position: absolute;
   top: 20px;
   right: -65px;
 }
 
-.hide-left{
-  //left: -$drawer-width;
-}
-
-.show-left{
-  //left: 0px;
-}
-
-
-
-#sidebar-control{
-  position: absolute;
-  top: 20px;
-  right: -65px;
+button:focus{
+  outline: none;
 }
