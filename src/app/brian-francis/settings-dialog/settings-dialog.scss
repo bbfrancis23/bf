@@ -1,0 +1,38 @@
+ul{
+  list-style-type: none;
+  display: block;
+  padding: 0px;
+}
+
+.color{
+
+
+  height: 30px;
+    width: 30px;
+    margin: 0 3px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: .4s;
+
+
+  &:hover{
+    transform: scale(1.2);
+  }
+}
+
+#beach-theme-select{
+  background-color: teal;
+}
+
+#tropical-theme-select{
+  background-color: blue;
+}
+
+#midnight-theme-select{
+  background-color: indigo;
+}
+
+#lush-theme-select{
+  background-color: green;
+}

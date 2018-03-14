@@ -1,11 +1,45 @@
 
+* {box-sizing:border-box}
 
-aeo-view-port#about{
-  div.vp-container{
-    padding-top: 10vh;
-  }
+
+
+.settings{
+  position: fixed;
+  top: 80px;
+  left: 8px;
+  //z-index: 1;
 }
 
+
+.meter{
+  width: 100%; /* Full width */
+   background-color: #ddd; /* Grey background */
+
+
+}
+
+aeo-view-port#about{
+
+}
+
+.skills {
+    text-align: right; /* Right-align text */
+    padding-right: 20px; /* Add some right padding */
+    line-height: 40px; /* Set the line-height to center the text inside the skill bar, and to expand the height of the container */
+    color: white; /* White text color */
+}
+
+.html {width: 90%; background-color: black; height: 5px;} /* Green */
+
+.programming-icons img{
+  filter: brightness(90%);
+  transition: filter 2s;
+
+  &:hover{
+    filter: brightness(200%);
+  }
+
+}
 
 .monogram{
 height: 224px;
@@ -27,22 +61,22 @@ height: 224px;
 }
 
 
-.row1{
-  flex: 1;
-  display: flex;
-  height: 500px;
-  color: white;
-}
+//.row1{
+//  flex: 1;
+//  display: flex;
+//  height: 500px;
+//  color: white;
+//}
 
-.col1{
-  background-color: blue;
-  flex:1;
-}
+//.col1{
+//  background-color: blue;
+//  flex:1;
+//}
 
-.col2{
-  background-color: blue;
-  flex:1;
-}
+//.col2{
+//  background-color: blue;
+//  flex:1;
+//}
 
 .slant{
   box-sizing: border-box;

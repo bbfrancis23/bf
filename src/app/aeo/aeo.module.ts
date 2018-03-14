@@ -5,12 +5,15 @@ import { AeoViewPort } from './view-port';
 
 import { MatIconModule, MatListModule, MatButtonModule } from '@angular/material';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 @NgModule({
   imports: [
     CommonModule,
     MatIconModule,
     MatListModule,
-    MatButtonModule
+    MatButtonModule,
+    BrowserAnimationsModule
   ],
   declarations: [AeoSideDrawer, AeoViewPort],
   exports: [AeoSideDrawer, AeoViewPort]

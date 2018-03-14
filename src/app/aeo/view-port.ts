@@ -1,24 +1,60 @@
-import { Component } from '@angular/core';
+import { Component, HostListener, ElementRef, Input } from '@angular/core';
 
+import {
+  trigger,
+  state,
+  style,
+  animate,
+  transition
+} from '@angular/animations';
 
 @Component({
   selector: 'aeo-view-port',
   template: `
-  <div>
+  <div class="container-fluid" [@scrollAnimation]="state">
     <ng-content>
     </ng-content>
   </div>
   `,
   styles: [`
     div{
-      box-sizing: border-box;
-      display: flex;
       width: 100vw;
       height: 100vh;
-      justify-content: center;
     }`
+  ],
+  animations: [
+    trigger('scrollAnimation', [
+      state('show', style({
+        opacity: 1,
+        transform: "translateX(0)"
+      })),
+      state('hide', style({
+        opacity: 0,
+        transform: "translateX(-100%)"
+      })),
+      transition('show => hide', animate('1400ms ease-out')),
+      transition('hide => show', animate('1400ms ease-in'))
+    ])
   ]
 })
 export class AeoViewPort {
 
+  @Input() state = 'hide';
+
+  constructor(public el: ElementRef) { }
+
+  @HostListener('window:scroll', ['$event'])
+  checkScroll() {
+    const componentPosition = this.el.nativeElement.offsetTop;
+    const scrollPosition = window.pageYOffset;
+
+    //console.log(scrollPosition, componentPosition);
+
+    if (scrollPosition <= componentPosition) {
+      this.state = 'show'
+    } else {
+      //this.state = 'hide'
+    }
+
+  }
 }

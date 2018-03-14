@@ -1,0 +1,5 @@
+$beach-theme-primary: mat-palette($mat-teal);
+$beach-theme-accent: mat-palette($mat-brown);
+$beach-theme-warn: mat-palette($mat-red);
+
+$beach-theme: mat-light-theme( $beach-theme-primary, $beach-theme-accent, $beach-theme-warn);

@@ -1,0 +1,5 @@
+$midnight-theme-primary: mat-palette($mat-deep-purple);
+$midnight-theme-accent: mat-palette($mat-indigo);
+$midnight-theme-warn: mat-palette($mat-red);
+
+$midnight-theme: mat-dark-theme( $midnight-theme-primary, $midnight-theme-accent, $midnight-theme-warn);

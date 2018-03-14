@@ -1,6 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/theming';
+@include mat-core();
+
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
+@import "beach-theme.scss";
+@import "tropical-theme.scss";
+@import "midnight-theme.scss";
+@import "lush-theme.scss";
+
+.beach-theme{
+  @include angular-material-theme($beach-theme);
+}
+
+.tropical-theme{
+  @include angular-material-theme($tropical-theme);
+}
+
+.midnight-theme{
+  @include angular-material-theme($midnight-theme);
+}
+
+.lush-theme{
+  @include angular-material-theme($lush-theme);
+}
+
+* {box-sizing:border-box}
 
 body{
   margin: 0px;
