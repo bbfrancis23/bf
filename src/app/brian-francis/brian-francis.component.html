@@ -1,26 +1,15 @@
-<div [class]="appService.theme">
+<div class="app-container" >
 <aeo-side-drawer   #drawer [width]="224">
   <div class="monogram">BF</div>
-  <mat-list>
-    <mat-list-item>
-      <a href="#about"  (mouseup)="drawer.closed = true;"><button mat-icon-button><mat-icon>account_circle</mat-icon> About</button></a>
-    </mat-list-item>
-    <mat-list-item>
-      <a href="#skills" (mouseup)="drawer.closed = true;"><button mat-icon-button><mat-icon>settings</mat-icon> Skills</button></a>
-    </mat-list-item>
-    <mat-list-item>
-      <button mat-icon-button><mat-icon>work</mat-icon> Experince</button>
-    </mat-list-item>
-    <mat-list-item>
-      <button mat-icon-button><mat-icon>favorites</mat-icon> Interests</button>
-    </mat-list-item>
-    <mat-list-item>
-      <button mat-icon-button><mat-icon>feedback</mat-icon> Testimonial</button>
-    </mat-list-item>
-    <mat-list-item>
-      <button mat-icon-button><mat-icon>web</mat-icon> Websites</button>
-    </mat-list-item>
-  </mat-list>
+    <mat-nav-list>
+      <mat-list-item>
+        <a href="#about"  (mouseup)="drawer.closed = true;"><button mat-icon-button><mat-icon>account_circle</mat-icon> About</button></a>
+      </mat-list-item>
+      <mat-list-item>
+        <a href="#skills"  (mouseup)="drawer.closed = true;"><button mat-icon-button><mat-icon>settings</mat-icon> About</button></a>
+      </mat-list-item>
+    </mat-nav-list>
+
 </aeo-side-drawer>
 
 <button class="settings"  mat-fab (click)="openDialog()"><mat-icon>settings</mat-icon></button>

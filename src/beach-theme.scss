@@ -1,3 +1,5 @@
+@import '~@angular/material/theming';
+
 $beach-theme-primary: mat-palette($mat-teal);
 $beach-theme-accent: mat-palette($mat-brown);
 $beach-theme-warn: mat-palette($mat-red);

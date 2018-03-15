@@ -1,4 +1,5 @@
 
+
 * {box-sizing:border-box}
 
 
@@ -7,7 +8,7 @@
   position: fixed;
   top: 80px;
   left: 8px;
-  //z-index: 1;
+  z-index: 1;
 }
 
 
@@ -42,14 +43,13 @@ aeo-view-port#about{
 }
 
 .monogram{
-height: 224px;
+  height: 224px;
   line-height: 224px;
   vertical-align: middle;
   background-color: blue;
   text-align: center;
   font-size: 75px;
-  color: white;
-  //border: 5px solid white;
+  color: white;  
   outline: 10px solid white;
   outline-offset: -40px;
 }

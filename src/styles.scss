@@ -1,32 +1,62 @@
-/* You can add global styles to this file, and also import other style files */
+@import "beach-theme.scss";
+@import "tropical-theme.scss";
+@import "midnight-theme.scss";
+@import "lush-theme.scss";
 @import '~@angular/material/theming';
 @include mat-core();
 
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
-@import "beach-theme.scss";
-@import "tropical-theme.scss";
-@import "midnight-theme.scss";
-@import "lush-theme.scss";
+
+
+@import "app/aeo/side-drawer/side-drawer-theme.scss";
+
+@mixin custom-components-theme($theme){
+  @include side-drawer-theme($theme);
+}
+
+$drawer-width: 224px;
+$nav-button-spacing: 20px;
+
+$nav-button-layer: 1;
+$drawer-layer: 2;
 
 .beach-theme{
   @include angular-material-theme($beach-theme);
+  @include custom-components-theme($beach-theme);
 }
 
 .tropical-theme{
   @include angular-material-theme($tropical-theme);
+  @include custom-components-theme($tropical-theme);
 }
 
 .midnight-theme{
   @include angular-material-theme($midnight-theme);
+  @include custom-components-theme($midnight-theme);
 }
 
 .lush-theme{
   @include angular-material-theme($lush-theme);
+  @include custom-components-theme($lush-theme);
 }
+
+
 
 * {box-sizing:border-box}
 
-body{
-  margin: 0px;
+body{ margin: 0px }
+
+body.lush-theme, body.midnight-theme{
+  background-color: #303030;
+}
+
+
+body.beach-theme, body.tropical-theme{
+  background-color: #fafafa;
+}
+
+
+button:focus{
+  outline: none;
 }

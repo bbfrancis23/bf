@@ -1,4 +1,4 @@
-import { Component, Inject, OnDestroy } from '@angular/core';
+import { Component, Inject, OnInit, OnDestroy } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Subscription } from 'rxjs/Subscription';
 import { MatDialog } from '@angular/material';
@@ -12,7 +12,9 @@ import { AppService } from '../app.service';
   templateUrl: './brian-francis.component.html',
   styleUrls: ['./brian-francis.component.scss']
 })
-export class BrianFrancisComponent implements OnDestroy {
+export class BrianFrancisComponent implements OnInit, OnDestroy {
+
+  theme = 'beach-theme';
 
   animal: string;
   name: string;
@@ -28,9 +30,13 @@ export class BrianFrancisComponent implements OnDestroy {
     });
 
     dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
-      console.log(result);
+      //console.log('The dialog was closed');
+      //console.log(result);
     });
+  }
+
+  ngOnInit() {
+    this.appService.currentTheme.subscribe(theme => { this.theme = theme; });
   }
 
   ngOnDestroy() {

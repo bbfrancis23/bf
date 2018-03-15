@@ -1,3 +1,5 @@
+@import '~@angular/material/theming';
+
 $midnight-theme-primary: mat-palette($mat-deep-purple);
 $midnight-theme-accent: mat-palette($mat-indigo);
 $midnight-theme-warn: mat-palette($mat-red);

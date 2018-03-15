@@ -19,7 +19,11 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.scss"
+        "styles.scss",
+        "beach-theme.scss",
+        "tropical-theme.scss",
+        "midnight-theme.scss",
+        "lush-theme.scss"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",

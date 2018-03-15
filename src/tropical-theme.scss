@@ -1,3 +1,5 @@
+@import '~@angular/material/theming';
+
 $tropical-theme-primary: mat-palette($mat-indigo);
 $tropical-theme-accent: mat-palette($mat-light-blue);
 $tropical-theme-warn: mat-palette($mat-red);
