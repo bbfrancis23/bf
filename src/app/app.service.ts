@@ -10,5 +10,5 @@ export class AppService {
   private changeTheme(theme: string) { this.themeSource.next(theme) }
 
 
-  photo = 'brian-francis.jpg';
+  photo = 'assets/brian-francis-pro.jpg';
 }

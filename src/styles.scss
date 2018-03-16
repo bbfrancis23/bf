@@ -10,16 +10,14 @@
 
 
 @import "app/aeo/side-drawer/side-drawer-theme.scss";
+@import "app/brian-francis/brian-francis-theme.scss";
 
 @mixin custom-components-theme($theme){
   @include side-drawer-theme($theme);
+  @include brian-francis-theme($theme);
 }
 
-$drawer-width: 224px;
-$nav-button-spacing: 20px;
 
-$nav-button-layer: 1;
-$drawer-layer: 2;
 
 .beach-theme{
   @include angular-material-theme($beach-theme);
@@ -58,6 +56,19 @@ button:focus{
   outline: none;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #666666;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: black;
+}
+::-webkit-scrollbar-track {
+  border: 1px solid grey;
+}
+
 /////////////////////////////////////////////////////// custom components /////////////////
 
 $drawer-width: 225px;
@@ -76,4 +87,11 @@ aeo-side-drawer#left-drawer{
   .aeo-sidedrawer-container.closed{
     left: -$drawer-width;
   }
+}
+
+#settings{
+  position: fixed;
+  top: $nav-button-spacing;
+  left: ($nav-button-spacing + 50px +$nav-button-spacing);
+  z-index: 1;
 }

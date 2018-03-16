@@ -1,0 +1,28 @@
+@import '~@angular/material/theming';
+
+@mixin brian-francis-theme($theme){
+
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $warn: map-get($theme, warn);
+  $foreground: map-get($theme, foreground);
+  $background: map-get($theme, background);
+
+  app-brian-francis{
+
+    div.monogram{
+      background-color: mat-color($primary);
+      color: white;
+
+
+      outline: 10px solid white;
+    }
+
+    #about{
+      .row{
+        background-color: mat-color($primary);
+        color: white;
+      }
+    }
+  }
+}

@@ -18,7 +18,7 @@ import {
   `,
   styles: [`
     div{
-      width: 100vw;
+      width: 99vw;
       height: 100vh;
     }`
   ],

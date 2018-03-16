@@ -1,6 +1,6 @@
 <div class="app-container" >
   <aeo-side-drawer id="left-drawer" #drawer>
-    <div class="monogram">BF</div>
+      <div class="monogram">BF</div>
       <mat-nav-list>
         <mat-list-item>
           <a href="#about"  (mouseup)="drawer.closed = true;"><button mat-icon-button><mat-icon>account_circle</mat-icon> About</button></a>
@@ -11,11 +11,11 @@
       </mat-nav-list>
   </aeo-side-drawer>
 
-<button class="settings"  mat-fab (click)="openDialog()"><mat-icon>settings</mat-icon></button>
+<button id="settings"  mat-fab (click)="openDialog()"><mat-icon>settings</mat-icon></button>
 
 <aeo-view-port id="about" [state]='show'>
     <div class="container" style="padding-top: 10vh">
-      <div class="row" style="background-color: blue">
+      <div class="row">
         <div class="col-12 col-sm-12 col-md-7 " >
           <div class="intro-header" >
 
@@ -49,7 +49,7 @@
         </div>
         <div  class="d-none d-sm-none d-md-block col-md-5 " style="padding-right: 0px">
 
-          <img class="float-right slant" src="assets/brian-francis-pro.jpg" height="500px;" style="position: ">
+          <img class="float-right slant" [src]="appService.photo" height="500px;" style="position: ">
         </div>
       </div>
 </div>

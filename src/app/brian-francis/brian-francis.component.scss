@@ -1,16 +1,16 @@
 
-
+h1{
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: 0px 5px 3px #4d4d4d
+}
 
 * {box-sizing:border-box}
 
 
-
-.settings{
-  position: fixed;
-  top: 80px;
-  left: 8px;
-  z-index: 1;
+#settings{
+  postion: fixed;
 }
+
 
 
 .meter{
@@ -31,7 +31,7 @@ aeo-view-port#about{
     color: white; /* White text color */
 }
 
-.html {width: 90%; background-color: black; height: 5px;} /* Green */
+//.html {width: 90%; background-color: black; height: 5px;} /* Green */
 
 .programming-icons img{
   filter: brightness(90%);
@@ -44,15 +44,14 @@ aeo-view-port#about{
 }
 
 .monogram{
+  font-family: 'Montserrat', sans-serif;
   height: 224px;
   line-height: 224px;
   vertical-align: middle;
-  background-color: blue;
   text-align: center;
   font-size: 75px;
-  color: white;
-  outline: 10px solid white;
   outline-offset: -40px;
+  text-shadow: 0px 5px 3px #4d4d4d
 }
 
 
@@ -62,24 +61,9 @@ aeo-view-port#about{
 }
 
 
-//.row1{
-//  flex: 1;
-//  display: flex;
-//  height: 500px;
-//  color: white;
-//}
 
-//.col1{
-//  background-color: blue;
-//  flex:1;
-//}
-
-//.col2{
-//  background-color: blue;
-//  flex:1;
-//}
 
 .slant{
-  box-sizing: border-box;
+
   clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
 }
