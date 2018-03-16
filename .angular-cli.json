@@ -23,7 +23,8 @@
         "beach-theme.scss",
         "tropical-theme.scss",
         "midnight-theme.scss",
-        "lush-theme.scss"
+        "lush-theme.scss",
+        "pirate-theme.scss"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
