@@ -1,7 +1,5 @@
 @import '~@angular/material/theming';
 
-
-
 @mixin side-drawer-theme($theme){
 
   $primary: map-get($theme, primary);
@@ -13,25 +11,9 @@
   aeo-side-drawer{
 
     div.aeo-sidedrawer-container{
-      position:fixed;
-      top: 0;
-      height: 100vh;
-      transition: all .5s ease-in-out;
-      border-right:  1px solid grey;
-      z-index: $drawer-layer;
-      width: $drawer-width;
-      left: 0;
 
       color: mat-color($foreground, text);
       background-color: mat-color($background, background);
-
-      button.aeo-sidedrawer-control{
-        position: absolute;
-        top: $nav-button-spacing;
-        left: ($drawer-width + $nav-button-spacing);
-      }
-
-
     }
   }
 }
