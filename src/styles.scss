@@ -41,8 +41,6 @@ $drawer-layer: 2;
   @include custom-components-theme($lush-theme);
 }
 
-
-
 * {box-sizing:border-box}
 
 body{ margin: 0px }
@@ -56,7 +54,26 @@ body.beach-theme, body.tropical-theme{
   background-color: #fafafa;
 }
 
-
 button:focus{
   outline: none;
+}
+
+/////////////////////////////////////////////////////// custom components /////////////////
+
+$drawer-width: 225px;
+$nav-button-spacing: 20px;
+
+aeo-side-drawer#left-drawer{
+  .aeo-sidedrawer-container{
+    width: $drawer-width;
+
+    button.aeo-sidedrawer-control{
+      top: $nav-button-spacing;
+      left: ($drawer-width + $nav-button-spacing);
+    }
+  }
+
+  .aeo-sidedrawer-container.closed{
+    left: -$drawer-width;
+  }
 }

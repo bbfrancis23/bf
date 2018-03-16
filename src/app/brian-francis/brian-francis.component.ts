@@ -7,6 +7,8 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 
 import { AppService } from '../app.service';
 
+import { AeoSideDrawer } from '../aeo/side-drawer/side-drawer';
+
 @Component({
   selector: 'app-brian-francis',
   templateUrl: './brian-francis.component.html',
