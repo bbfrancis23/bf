@@ -13,8 +13,6 @@
     div.monogram{
       background-color: mat-color($primary);
       color: white;
-
-
       outline: 10px solid white;
     }
 
@@ -22,6 +20,52 @@
       .row{
         background-color: mat-color($primary);
         color: white;
+      }
+    }
+
+    #skills{
+      div.container{
+        padding-top: 10vh;
+        .row{
+          background-color: mat-color($primary);
+          color: white;
+
+          .skills {
+              height: 5px;
+              background-color: mat-color($accent, lighter);
+            }
+        .javascript{width: 85% }
+        .perl{width: 75%}
+        .php{width: 75%}
+        .bootstrap{width: 80%}
+        .jasmine{width: 70%}
+        .jquery{width: 70%}
+        .express{width: 70%}
+        .material{width: 75%}
+        .typescript{width: 85% }
+        .angular{width: 85% }
+        .express{width: 70% }
+        .atom{width: 85%}
+        .git{width: 70%}
+        .illustrator{width: 65%}
+        .photoshop{width: 65%}
+        .unix{width: 70%}
+        .windows{width: 80%}
+        .html{width: 95%}
+        .css{width: 90%}
+        .sass{width: 85%}
+        .communication{width: 85%}
+        .creativity{width: 80%}
+        .leadership{width: 80%}
+        .loyalty{width: 95%}
+        .quality{width: 90%}
+        .speed{width: 75%}
+        .teamwork{width: 90%}
+        .mongo{width: 70%}
+        .postgres{width: 80%}
+        .mysql{width: 75%}
+        .seo{width: 80%} 
+        }
       }
     }
   }
