@@ -59,35 +59,6 @@
   @include custom-components-theme($arizona-theme);
 }
 
-// GLOBALS //
-
-* { box-sizing:border-box }
-
-body{ margin: 0px }
-
-button:focus{ outline: none } // TODO Change outline for round buttons
-
-
-
-body.lush-theme, body.midnight-theme, body.tech-theme{
-  background-color: #303030;
-}
-
-
-
-body.beach-theme, body.tropical-theme, body.pirate-theme{
-  background-color: #fafafa;
-}
-
-.beach-theme, .tropical-theme, .midnight-theme, .tech-theme{
-  div.hero{
-    img{
-        filter: blur(5px);
-    }
-  }
-}
-
-
 
 // CHROM SCROLLBAR //
 
@@ -103,6 +74,55 @@ body.beach-theme, body.tropical-theme, body.pirate-theme{
 ::-webkit-scrollbar-track {
   border: 1px solid grey;
 }
+// GLOBALS //
+
+* {
+  box-sizing:border-box;
+  transition: background-color 3s; }
+
+body{ margin: 0px }
+
+button:focus{ outline: none } // TODO Change outline for round buttons
+
+
+
+// CUSTOM THEME //
+
+body.lush-theme, body.midnight-theme, body.tech-theme{
+  background-color: #303030;
+}
+
+
+body.beach-theme, body.tropical-theme, body.pirate-theme{
+  background-color: #fafafa;
+}
+
+.beach-theme, .tropical-theme, .midnight-theme{
+  div.hero{
+    img{
+        filter: blur(5px);
+    }
+  }
+}
+
+.midnight-theme, .arizona-theme {
+  div.hero{
+    img{
+      filter: brightness(50%);
+    }
+  }
+}
+
+.tech-theme{
+  div.hero{
+    img{
+      filter: blur(2px)  brightness(200%) ;
+
+    }
+  }
+}
+
+
 
 // CUSTOM COMPONENTS //
 
