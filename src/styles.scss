@@ -3,12 +3,13 @@
 @import "midnight-theme.scss";
 @import "lush-theme.scss";
 @import "pirate-theme.scss";
+@import "tech-theme.scss";
+@import "corp-theme.scss";
+@import "arizona-theme.scss";
 @import '~@angular/material/theming';
 @include mat-core();
 
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
-
-
 
 @import "app/aeo/side-drawer/side-drawer-theme.scss";
 @import "app/brian-francis/brian-francis-theme.scss";
@@ -17,8 +18,6 @@
   @include side-drawer-theme($theme);
   @include brian-francis-theme($theme);
 }
-
-
 
 .beach-theme{
   @include angular-material-theme($beach-theme);
@@ -45,22 +44,52 @@
   @include custom-components-theme($pirate-theme);
 }
 
-* {box-sizing:border-box}
+.corp-theme{
+  @include angular-material-theme($corp-theme);
+  @include custom-components-theme($corp-theme);
+}
+
+.tech-theme{
+  @include angular-material-theme($tech-theme);
+  @include custom-components-theme($tech-theme);
+}
+
+.arizona-theme{
+  @include angular-material-theme($arizona-theme);
+  @include custom-components-theme($arizona-theme);
+}
+
+// GLOBALS //
+
+* { box-sizing:border-box }
 
 body{ margin: 0px }
 
-body.lush-theme, body.midnight-theme{
+button:focus{ outline: none } // TODO Change outline for round buttons
+
+
+
+body.lush-theme, body.midnight-theme, body.tech-theme{
   background-color: #303030;
 }
 
 
-body.beach-theme, body.tropical-theme{
+
+body.beach-theme, body.tropical-theme, body.pirate-theme{
   background-color: #fafafa;
 }
 
-button:focus{
-  outline: none;
+.beach-theme, .tropical-theme, .midnight-theme, .tech-theme{
+  div.hero{
+    img{
+        filter: blur(5px);
+    }
+  }
 }
+
+
+
+// CHROM SCROLLBAR //
 
 ::-webkit-scrollbar {
   width: 5px;
@@ -75,7 +104,7 @@ button:focus{
   border: 1px solid grey;
 }
 
-/////////////////////////////////////////////////////// custom components /////////////////
+// CUSTOM COMPONENTS //
 
 $drawer-width: 225px;
 $nav-button-spacing: 20px;

@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { AeoSideDrawer } from './side-drawer/side-drawer';
 import { AeoViewPort } from './view-port';
 
-import { MatIconModule, MatListModule, MatButtonModule } from '@angular/material';
+import { MatIconModule, MatListModule, MatButtonModule, MatTooltipModule } from '@angular/material';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -13,6 +13,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatIconModule,
     MatListModule,
     MatButtonModule,
+    MatTooltipModule,
     BrowserAnimationsModule
   ],
   declarations: [AeoSideDrawer, AeoViewPort],

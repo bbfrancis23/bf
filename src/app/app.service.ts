@@ -11,4 +11,6 @@ export class AppService {
 
 
   photo = 'assets/brian-francis-pro.jpg';
+
+  hero = 'assets/beach-hero.jpg';
 }

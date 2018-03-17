@@ -5,7 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 
-import { MatButtonModule, MatCardModule, MatDialogModule, MatIconModule, MatListModule, MatSidenavModule, MatToolbarModule } from '@angular/material';
+import { MatButtonModule, MatCardModule, MatDialogModule, MatIconModule, MatListModule, MatSidenavModule, MatToolbarModule, MatTooltipModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { MilieuModule } from './milieu/milieu.module';
@@ -36,6 +36,7 @@ import { OverlayContainer } from '@angular/cdk/overlay';
     MatListModule,
     MatSidenavModule,
     MatToolbarModule,
+    MatTooltipModule,
     MilieuModule,
     LayoutModule,
     AeoModule
