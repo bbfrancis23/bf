@@ -24,11 +24,16 @@
     }
 
     #skills{
+
       div.container{
-        padding-top: 10vh;
+        padding: 30px;
+        background-color: mat-color($primary);
+        color: white;
+
         .row{
-          background-color: mat-color($primary);
-          color: white;
+
+
+          line-height: 35px;          
 
           .skills {
               height: 5px;
@@ -64,7 +69,7 @@
         .mongo{width: 70%}
         .postgres{width: 80%}
         .mysql{width: 75%}
-        .seo{width: 80%} 
+        .seo{width: 80%}
         }
       }
     }
