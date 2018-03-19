@@ -8,7 +8,15 @@
   $foreground: map-get($theme, foreground);
   $background: map-get($theme, background);
 
+  h3.section{
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 0px 5px 3px #4d4d4d;
+    font-size: 250%;
+  }
+
   app-brian-francis{
+
+
 
     div.monogram{
       background-color: mat-color($primary);
@@ -33,7 +41,7 @@
         .row{
 
 
-          line-height: 35px;          
+          line-height: 35px;
 
           .skills {
               height: 5px;
