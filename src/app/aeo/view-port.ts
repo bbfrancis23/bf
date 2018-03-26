@@ -19,7 +19,7 @@ import {
   styles: [`
     div{
       width: 99vw;
-      height: 100vh;
+      minheight: 100vh;
     }`
   ],
   animations: [
@@ -32,8 +32,8 @@ import {
         opacity: 0,
         transform: "translateX(-100%)"
       })),
-      transition('show => hide', animate('1400ms ease-out')),
-      transition('hide => show', animate('1400ms ease-in'))
+      transition('show => hide', animate('400ms ease-out')),
+      transition('hide => show', animate('400ms ease-in'))
     ])
   ]
 })
@@ -41,7 +41,8 @@ export class AeoViewPort {
 
   @Input() state = 'hide';
 
-  constructor(public el: ElementRef) { }
+  constructor(public el: ElementRef) {
+  }
 
   @HostListener('window:scroll', ['$event'])
   checkScroll() {
@@ -50,8 +51,11 @@ export class AeoViewPort {
 
     //console.log(scrollPosition, componentPosition);
 
-    if (scrollPosition <= componentPosition) {
-      this.state = 'show'
+
+
+    if ((scrollPosition + 500) >= componentPosition && this.state === 'hide') {
+      //console.log(scrollPosition, componentPosition, this);
+      this.state = 'show';
     } else {
       //this.state = 'hide'
     }

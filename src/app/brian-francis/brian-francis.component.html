@@ -9,8 +9,12 @@
           <a href="#about"  (mouseup)="drawer.closed = true;"><button mat-icon-button><mat-icon>account_circle</mat-icon> ABOUT</button></a>
         </mat-list-item>
         <mat-list-item>
-          <a href="#skills" (mouseup)="drawer.closed = true;"><button mat-icon-button><mat-icon>settings</mat-icon> SKILLS</button></a>
+          <a href="#experience" (mouseup)="drawer.closed = true;"><button mat-icon-button><mat-icon>business_center</mat-icon> Experience</button></a>
         </mat-list-item>
+        <mat-list-item>
+          <a href="#skills" (mouseup)="drawer.closed = true;"><button mat-icon-button><mat-icon>build</mat-icon> SKILLS</button></a>
+        </mat-list-item>
+
       </mat-nav-list>
   </aeo-side-drawer>
 
@@ -54,7 +58,40 @@
       </div>
 </div>
 </aeo-view-port>
-
+<aeo-view-port id="experience">
+    <div class="vp-padding"></div>
+    <div class="container">
+      <div class="timeline">
+        <div class="timeline-block">
+           <div class="dot"><h6><mat-icon>code</mat-icon></h6></div>
+           <div class="content">
+             <h1>2017</h1>
+             <h1>AEO</h1>
+             lkasjfdlkasjdfl j<br>
+             askhfdkajshdfkj <br>
+           </div>
+        </div>
+        <div class="timeline-block">
+           <div class="dot"><h6>F</h6></div>
+           <div class="content">
+             <h1>2016</h1>
+             <h1>Free</h1>
+             lkasjfdlkasjdfl j<br>
+             askhfdkajshdfkj <br>
+           </div>
+        </div>
+        <div class="timeline-block">
+           <div class="dot"><h6><mat-icon>directions_boat</mat-icon></h6></div>
+           <div class="content">
+             <h1>2000</h1>
+             <h1>iboats</h1>
+             lkasjfdlkasjdfl j<br>
+             askhfdkajshdfkj <br>
+           </div>
+        </div>
+      </div>
+    </div>
+</aeo-view-port>
 
 <aeo-view-port id="skills">
   <div class="vp-padding"></div>
@@ -64,22 +101,22 @@
       <div class="col-md-4">
         <div class="text-center"><strong class="mat-title">Programming</strong></div>
 
-        <div class="row">
-          <div class="col-6">JavaScript</div><div class="col-6" style="text-align: right">85%</div>
+        <div class="row text-left">
+          <div class="col-6 ">JavaScript</div><div class="col-6" style="text-align: right">85%</div>
         </div>
         <div class="skills javascript"></div>
 
-        <div class="row">
+        <div class="row text-left">
           <div class="col-6">Perl</div><div class="col-6" style="text-align: right">75%</div>
         </div>
         <div class="skills perl"></div>
 
-        <div class="row">
+        <div class="row text-left">
           <div class="col-6">PHP</div><div class="col-6" style="text-align: right">75%</div>
         </div>
         <div class="skills php"></div>
 
-        <div class="row">
+        <div class="row text-left">
           <div class="col-6">TypeScript</div><div class="col-6" style="text-align: right">85%</div>
         </div>
         <div class="skills typescript"></div><br>
@@ -87,33 +124,33 @@
 
         <div class="text-center"><strong class="mat-title">Frameworks</strong></div>
 
-        <div class="row">
+        <div class="row text-left">
           <div class="col-6">Angular</div><div class="col-6" style="text-align: right">85%</div>
         </div>
         <div class="skills angular"></div>
 
 
-        <div class="row">
+        <div class="row text-left">
           <div class="col-6">Angular Material</div><div class="col-6" style="text-align: right">75%</div>
         </div>
         <div class="skills material"></div>
 
-        <div class="row">
+        <div class="row text-left">
           <div class="col-6">Bootstrap</div><div class="col-6" style="text-align: right">80%</div>
         </div>
         <div class="skills bootstrap"></div>
 
-        <div class="row">
+        <div class="row text-left">
           <div class="col-6">Jasmine</div><div class="col-6" style="text-align: right">70%</div>
         </div>
         <div class="skills jasmine"></div>
 
-        <div class="row">
+        <div class="row text-left">
           <div class="col-6">JQuery</div><div class="col-6" style="text-align: right">70%</div>
         </div>
         <div class="skills jquery"></div>
 
-        <div class="row">
+        <div class="row text-left">
           <div class="col-6">NodeJS Express</div><div class="col-6" style="text-align: right">70%</div>
         </div>
         <div class="skills express"></div>
@@ -127,32 +164,32 @@
 
         <div class="text-center"><strong class="mat-title">Software</strong></div>
 
-        <div class="row">
+        <div class="row text-left">
           <div class="col-6">Atom</div><div class="col-6" style="text-align: right">85%</div>
         </div>
         <div class="skills atom"></div>
 
-        <div class="row">
+        <div class="row text-left">
           <div class="col-6">Git</div><div class="col-6" style="text-align: right">70%</div>
         </div>
         <div class="skills git"></div>
 
-        <div class="row">
+        <div class="row text-left">
           <div class="col-6">Illustrator</div><div class="col-6" style="text-align: right">65%</div>
         </div>
         <div class="skills illustrator"></div>
 
-        <div class="row">
+        <div class="row text-left">
           <div class="col-6">PhotoShop</div><div class="col-6" style="text-align: right">65%</div>
         </div>
         <div class="skills photoshop"></div>
 
-        <div class="row">
+        <div class="row text-left">
           <div class="col-6">Unix</div><div class="col-6" style="text-align: right">70%</div>
         </div>
         <div class="skills unix"></div>
 
-        <div class="row">
+        <div class="row text-left">
           <div class="col-6">Windows</div><div class="col-6" style="text-align: right">80%</div>
         </div>
         <div class="skills windows"></div><br>
@@ -171,22 +208,22 @@
 
 
         <div class="text-center"><strong class="mat-title">Web Development</strong></div>
-        <div class="row">
+        <div class="row text-left">
           <div class="col-6">HTML 5</div><div class="col-6" style="text-align: right">95%</div>
         </div>
         <div class="skills html"></div>
 
-        <div class="row">
+        <div class="row text-left">
           <div class="col-6">CSS 3</div><div class="col-6" style="text-align: right">90%</div>
         </div>
         <div class="skills css"></div>
 
-        <div class="row">
+        <div class="row text-left">
           <div class="col-6">SASS</div><div class="col-6" style="text-align: right">85%</div>
         </div>
         <div class="skills sass"></div>
 
-        <div class="row">
+        <div class="row text-left">
           <div class="col-6">SEO</div><div class="col-6" style="text-align: right">80%</div>
         </div>
         <div class="skills seo"></div>
@@ -196,36 +233,36 @@
       <div class="col-md-4">
         <div class="text-center"><strong class="mat-title">Professional</strong></div>
 
-        <div class="row">
+        <div class="row text-left">
           <div class="col-6">Communication</div><div class="col-6" style="text-align: right">85%</div>
         </div>
         <div class="skills communication"></div>
 
-        <div class="row">
+        <div class="row text-left">
           <div class="col-6">Creativity</div><div class="col-6" style="text-align: right">80%</div>
         </div>
         <div class="skills creativity"></div>
 
-        <div class="row">
+        <div class="row text-left">
           <div class="col-6">Leadership</div><div class="col-6" style="text-align: right">80%</div>
         </div>
         <div class="skills leadership"></div>
 
-        <div class="row">
+        <div class="row text-left">
           <div class="col-6">Loyalty</div><div class="col-6" style="text-align: right">95%</div>
         </div>
         <div class="skills loyalty"></div>
 
-        <div class="row">
+        <div class="row text-left">
           <div class="col-6">Quality</div><div class="col-6" style="text-align: right">90%</div>
         </div>
         <div class="skills quality"></div>
 
-        <div class="row">
+        <div class="row text-left">
           <div class="col-6">Speed</div><div class="col-6" style="text-align: right">75%</div>
         </div>
         <div class="skills speed"></div>
-        <div class="row">
+        <div class="row text-left">
           <div class="col-6">Teamwork</div><div class="col-6" style="text-align: right">90%</div>
         </div>
         <div class="skills teamwork"></div><br>
@@ -240,19 +277,19 @@
 
 
         <div class="text-center"><strong class="mat-title">Databases</strong></div>
-        <div class="row">
+        <div class="row text-left">
           <div class="col-6">MongoDB</div><div class="col-6" style="text-align: right">70%</div>
         </div>
         <div class="skills mongo"></div>
 
 
 
-        <div class="row">
+        <div class="row text-left">
           <div class="col-6">MySQL</div><div class="col-6" style="text-align: right">75%</div>
         </div>
         <div class="skills mysql"></div>
 
-        <div class="row">
+        <div class="row text-left">
           <div class="col-6">Postgres</div><div class="col-6" style="text-align: right">80%</div>
         </div>
         <div class="skills postgres"></div>
@@ -260,39 +297,70 @@
       </div>
     </div>
   </div>
-  <!-- <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <p>HTML 5</p>
-        <div class="meter">
-          <div class="skills html">90%</div>
-        </div>
-      </div>
-      <div class="col-md-4">
-      </div>
-      <div class="col-md-4">
-      </div>
-    </div>
-  </div>-->
+
 
 
 
 </aeo-view-port>
 
+<aeo-view-port>
+  <div class="vp-padding"></div>
+  <div class="container" >
+    <div class="row">
+      <div class="col-md-8" ><img src="/assets/iboats-thumb.png" width=100% height=100%></div>
+      <div class="col-md-4" >
+        <div class="container" >
+          <div class="row img-container" >
+            <img src="/assets/jody-thumb.png" width=100%  height=100%>
+          </div>
+          <br>
+          <div class="row" >
+            <img  src="/assets/jody-thumb.png" width=100% height=100% style="position: relative; top: 5px;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</aeo-view-port>
 
-<div class="view-port-container">
-  <div class="view-port-content">
-    viewport2
+<aeo-view-port id="testimonials">
+  <div class="vp-padding"></div>
+
+  <div class="container" >
+    <div class="row">
+      <div  class="d-none d-sm-none d-md-block col-md-5 " style="padding-left: 0px; margin-left: 0px;">
+
+        <img class="float-left right-slant" src="/assets/brianm.png" height="400px" >
+      </div>
+      <div class="col-sm-12 col-md-7" >
+        <div style="margin: auto; width: 60%; padding: 10px;">
+          <span class="quote">“</span><br>
+           The quality of his work has allowed us to climb from the ranks of “also has classifieds” to an industry leader. We trust him to be responsible for roughly a third of iboats total traffic (our life­blood). He has proven his ability to work well with other programmers to make positive changes to the underlying data structure which is common to other products in the company
+
+          <br><br><span class="signature"> ~ Brian Mellenthin </span> - Former VP Operations iboats.com.
+        </div>
+      </div>
+
+    </div>
   </div>
+  <br><br>
+  <div class="container" >
+    <div class="row">
+      <div class="col-sm-12 col-md-7" >
+        <div style="border: 1px solid red;" style=" margin: auto;
+    width: 60%;
+    padding: 10px;">
+          <span class="quote">“</span><br>
+          Brian absolutely exceeded all of my expectations in designing my website. He took all of my content and transformed into a phenomenal website. He edited my photos, created my logo, found perfect pictures to represent my services.
+All of my categories are layout are perfectly placed and the site flows magically. I highly recommend Brian. He is very prompt and delivers amazing service.
+          <br><br><span class="signature"> ~ Jody Farnsworth Uribe</span> - Owner magichealinghands.com
+        </div>
+      </div>
+      <div  class="d-none d-sm-none d-md-block col-md-5 " style="padding-right: 0px">
+
+        <img class="float-right slant" src="/assets/jody.jpg" height="400px" >
+      </div>
+    </div>
 </div>
-<div class="view-port-container">
-  <div class="view-port-content">
-    viewport2
-  </div>
-</div>
-<div class="view-port-container">
-  <div class="view-port-content">
-    viewport2
-  </div>
-</div>
+</aeo-view-port>
 </div>
