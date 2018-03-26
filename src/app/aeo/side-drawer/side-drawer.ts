@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'aeo-side-drawer',
@@ -6,22 +6,8 @@ import { Component, OnInit, Input } from '@angular/core';
   <div class="aeo-sidedrawer-container" [ngClass]="{'closed': closed}">
     <button class="aeo-sidedrawer-control" mat-fab (click)="closed = !closed" matTooltipShowDelay="1000" matTooltip="Menu"><mat-icon >{{closed ? 'menu' : 'close'}}</mat-icon></button>
     <ng-content></ng-content>
-  </div>`,
-  styleUrls: ['./side-drawer.scss']
+  </div>`
 })
-export class AeoSideDrawer implements OnInit {
-
-  //@Input() width: number;
-  closed = true;
-  //_left: number;
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-  //get left() {
-  //  return this.closed ? -Math.abs(this.width) : 0;
-  //  }
-
-
+export class AeoSideDrawer {
+  @Input() closed = true;
 }

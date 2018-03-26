@@ -16,7 +16,7 @@ import { AeoSideDrawer } from '../aeo/side-drawer/side-drawer';
 })
 export class BrianFrancisComponent implements OnInit, OnDestroy {
 
-  theme = 'beach-theme';
+  theme = 'corp-theme';
 
   animal: string;
   name: string;

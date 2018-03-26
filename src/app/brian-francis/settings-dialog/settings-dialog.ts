@@ -33,7 +33,7 @@ import { AppService } from '../../app.service';
 })
 export class SettingsDialog {
 
-  theme = 'beach-theme';
+  theme = 'corp-theme';
 
   constructor(public dialogRef: MatDialogRef<SettingsDialog>, @Inject(MAT_DIALOG_DATA) public data: any, public appService: AppService) {
   }

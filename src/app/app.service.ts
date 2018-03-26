@@ -5,12 +5,12 @@ import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 
 @Injectable()
 export class AppService {
-  private readonly themeSource = new BehaviorSubject<string>('beach-theme');
+  private readonly themeSource = new BehaviorSubject<string>('corp-theme');
   readonly currentTheme = this.themeSource.asObservable();
   private changeTheme(theme: string) { this.themeSource.next(theme) }
 
 
   photo = 'assets/brian-francis-pro.jpg';
 
-  hero = 'assets/beach-hero.jpg';
+  hero = 'assets/corp-hero.jpg';
 }

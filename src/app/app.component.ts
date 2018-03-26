@@ -14,7 +14,7 @@ import { OverlayContainer } from '@angular/cdk/overlay';
 })
 export class AppComponent implements OnInit {
 
-  lastTheme = 'beach-theme';
+  lastTheme = 'corp-theme';
 
   constructor(public appService: AppService, private overlayContainer: OverlayContainer) {
     this.appService.currentTheme.subscribe(theme => {

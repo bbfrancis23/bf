@@ -85,7 +85,6 @@ body{ margin: 0px }
 button:focus{ outline: none } // TODO Change outline for round buttons
 
 .vp-padding{
-
   padding-top: 10vh;
 }
 
@@ -100,7 +99,7 @@ body.beach-theme, body.tropical-theme, body.pirate-theme{
   background-color: #fafafa;
 }
 
-.beach-theme, .tropical-theme{
+.tropical-theme{
   div.hero{
     img{
         filter: blur(5px);
@@ -128,28 +127,3 @@ body.beach-theme, body.tropical-theme, body.pirate-theme{
 
 
 // CUSTOM COMPONENTS //
-
-$drawer-width: 225px;
-$nav-button-spacing: 20px;
-
-aeo-side-drawer#left-drawer{
-  .aeo-sidedrawer-container{
-    width: $drawer-width;
-
-    button.aeo-sidedrawer-control{
-      top: $nav-button-spacing;
-      left: ($drawer-width + $nav-button-spacing);
-    }
-  }
-
-  .aeo-sidedrawer-container.closed{
-    left: -$drawer-width;
-  }
-}
-
-#settings{
-  position: fixed;
-  top: $nav-button-spacing;
-  left: ($nav-button-spacing + 50px +$nav-button-spacing);
-  z-index: 1;
-}
