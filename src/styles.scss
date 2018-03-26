@@ -32,6 +32,10 @@
 .midnight-theme{
   @include angular-material-theme($midnight-theme);
   @include custom-components-theme($midnight-theme);
+
+
+  
+
 }
 
 .lush-theme{
@@ -123,6 +127,7 @@ body.beach-theme, body.tropical-theme, body.pirate-theme{
     }
   }
 }
+
 
 
 
