@@ -15,12 +15,22 @@ export class AppService implements OnDestroy {
   profileImgSq = ['/assets/brian-francis-sq.jpg', '/assets/brian-francis-2sq.jpg'];
 
   profileImgIndex = 0;
-  hero = 'assets/corp-hero.jpg';
+
 
   isSmall = false;
 
+  private readonly profileImgSource = new BehaviorSubject<string>(this.profileImg[this.profileImgIndex]);
+  readonly currentProfileImg = this.profileImgSource.asObservable();
+  private changeprofileImg() {
+    this.profileImgSource.next(this.isSmall ? this.profileImgSq[this.profileImgIndex] : this.profileImg[this.profileImgIndex]);
+  }
+
+  hero = 'assets/corp-hero.jpg';
+
   bpSubscription = this.breakpointObserver.observe('(max-width: 768px)').subscribe(result => {
     this.isSmall = result.matches;
+    this.changeprofileImg();
+
   });
 
   constructor(public breakpointObserver: BreakpointObserver) {

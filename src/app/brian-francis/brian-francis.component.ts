@@ -16,11 +16,13 @@ import { AeoSideDrawer } from '../aeo/side-drawer/side-drawer';
 })
 export class BrianFrancisComponent implements OnInit, OnDestroy {
 
-
+  subs = [];
+  profileImg = '';
 
   constructor(public breakpointObserver: BreakpointObserver, public dialog: MatDialog, public appService: AppService) {
 
-
+    let sub = this.appService.currentProfileImg.subscribe(img => this.profileImg = img);
+    this.subs.push(sub);
 
   }
 
@@ -32,8 +34,6 @@ export class BrianFrancisComponent implements OnInit, OnDestroy {
 
   }
 
-  ngOnDestroy() {
-
-  }
+  ngOnDestroy() { this.subs.forEach(sub => sub.unsubscribe()) }
 
 }
