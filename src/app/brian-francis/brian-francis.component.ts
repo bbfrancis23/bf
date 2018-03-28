@@ -21,8 +21,7 @@ export class BrianFrancisComponent implements OnInit, OnDestroy {
 
   constructor(public breakpointObserver: BreakpointObserver, public dialog: MatDialog, public appService: AppService) {
 
-    let sub = this.appService.currentProfileImg.subscribe(img => this.profileImg = img);
-    this.subs.push(sub);
+
 
   }
 

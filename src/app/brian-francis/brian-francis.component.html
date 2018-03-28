@@ -5,64 +5,28 @@
     <div class="monogram">BF</div>
       <mat-nav-list>
         <mat-list-item>
-          <a href="#about"  (mouseup)="drawer.closed = true;"><button mat-icon-button><mat-icon>account_circle</mat-icon> ABOUT</button></a>
+          <a href="#about"  (mouseup)="drawer.closed = true;"><button mat-icon-button><mat-icon>account_circle</mat-icon></button>ABOUT</a>
         </mat-list-item>
         <mat-list-item>
-          <a href="#experience" (mouseup)="drawer.closed = true;"><button mat-icon-button><mat-icon>business_center</mat-icon> EXPERIENCE</button></a>
+          <a href="#experience" (mouseup)="drawer.closed = true;"><button mat-icon-button><mat-icon>business_center</mat-icon></button>EXPERIENCE</a>
         </mat-list-item>
         <mat-list-item>
-          <a href="#skills" (mouseup)="drawer.closed = true;"><button mat-icon-button><mat-icon>build</mat-icon> SKILLS</button></a>
+          <a href="#skills" (mouseup)="drawer.closed = true;"><button mat-icon-button><mat-icon>build</mat-icon></button>SKILLS</a>
         </mat-list-item>
         <mat-list-item>
-          <a href="#portfolio" (mouseup)="drawer.closed = true;"><button mat-icon-button><mat-icon>collections</mat-icon> PORTFOLIO</button></a>
+          <a href="#portfolio" (mouseup)="drawer.closed = true;"><button mat-icon-button><mat-icon>collections</mat-icon></button>PORTFOLIO</a>
         </mat-list-item>
         <mat-list-item>
-          <a class="greet" href="#testimonials" (mouseup)="drawer.closed = true;"><button mat-icon-button><mat-icon>star</mat-icon> TESTIMONIALS</button></a>
+          <a class="#testimonials" href="#testimonials" (mouseup)="drawer.closed = true;"><button mat-icon-button><mat-icon>star</mat-icon></button>TESTIMONIALS</a>
         </mat-list-item>
       </mat-nav-list>
   </aeo-side-drawer>
 
   <button id="settings"  mat-fab (click)="openDialog()" matTooltipShowDelay="1000" matTooltip="App Settings"><mat-icon>settings</mat-icon></button>
 
-
-<aeo-view-port id="about" [state]='show'>
-  <div class="vp-padding"></div>
-    <div class="vp-padding"></div>
-  <div class="container" [ngClass]="{'small': appService.isSmall}">
-    <div class="row">
-      <div class="col-12 col-sm-12 col-md-7 " >
-        <div class="intro-header" >
-
-            <h1 >BRIAN FRANCIS</h1>
-            <h2 >Software Engineer & Angular Specialist</h2>
-            <mat-nav-list>
-              <mat-list-item >
-                <a href="tel:8018671885"><button mat-icon-button><mat-icon>phone</mat-icon></button> (801)867-1885 </a>
-              </mat-list-item >
-              <mat-list-item >
-                <a href="mailto:bbfrancis23@gmail.com"  ><button mat-icon-button><mat-icon>email</mat-icon></button> bbfrancis23@gmail.com</a>
-              </mat-list-item>
-            </mat-nav-list>
-            <span class="programming-icons" style="position: absolute; bottom: 25px;" *ngIf="!appService.isSmall" >
-              <a href="https://angular.io" target="_blank"><img src="assets/img/angular.png" title="Angular" ></a>
-              <a href="https://www.mongodb.com/" target="_blank"><img src="assets/img/mongo.png" title="MongoDB" ></a>
-              <a href="https://nodejs.org" target="_blank"><img src="assets/img/nodejs.png" title="NodeJS" style=""></a>
-              <a href="https://getbootstrap.com" target="_blank"><img src="assets/img/bootstrap.png" title="Bootstrap" style=""></a>
-              <a routerLink="code-jems/tech/css"><img src="assets/img/css.png"></a>
-              <a routerLink="code-jems/tech/css"><img src="assets/img/html.png"></a>
-              <a routerLink="code-jems/tech/css"><img src="assets/img/javascript.png"></a>
-            </span>
+<bf-profile id="#about" ></bf-profile>
 
 
-
-          </div>
-        </div>
-        <div  class="col-md-5" [ngClass]="{'porthole': appService.isSmall}" style="padding-right: 0px">
-          <img [ngClass]="{'slant': !appService.isSmall, 'float-right': !appService.isSmall}" [src]="profileImg"   >
-        </div>
-      </div>
-</div>
-</aeo-view-port>
 <aeo-view-port id="experience">
     <div class="vp-padding"></div>
     <div class="container">

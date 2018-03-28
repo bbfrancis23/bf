@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 import { MilieuModule } from './milieu/milieu.module';
 import { AeoModule } from './aeo/aeo.module';
 import { BrianFrancisComponent } from './brian-francis/brian-francis.component';
+import { BrianFrancisProfile } from './brian-francis/profile/profile';
 import { SettingsDialog } from './brian-francis/settings-dialog/settings-dialog';
 
 import { LayoutModule } from '@angular/cdk/layout';
@@ -23,6 +24,7 @@ import { OverlayContainer } from '@angular/cdk/overlay';
   declarations: [
     AppComponent,
     BrianFrancisComponent,
+    BrianFrancisProfile,
     SettingsDialog
   ],
   imports: [
