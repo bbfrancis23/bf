@@ -52,6 +52,8 @@
 
     aeo-view-port#about{
 
+
+
       .small{
           text-align: center;
           h2{
@@ -66,6 +68,10 @@
 
         .intro-header{
           margin: 50px;
+        }
+
+        mat-list-item{
+          color: white;
         }
       }
 
@@ -99,6 +105,7 @@
     }
   }
 
+/////////////////////////////////////
 
   h3.section{
     font-family: 'Montserrat', sans-serif;
