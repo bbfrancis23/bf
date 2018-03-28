@@ -24,20 +24,10 @@ h1{
 
 
 
-#settings{
-  postion: fixed;
-}
-
-
-
 .meter{
   width: 100%; /* Full width */
    background-color: #ddd; /* Grey background */
 
-
-}
-
-aeo-view-port#about{
 
 }
 
@@ -48,6 +38,8 @@ aeo-view-port#about{
 .programming-icons img{
   filter: brightness(90%);
   transition: filter 2s;
+
+  height: 40px;
 
   &:hover{
     filter: brightness(200%);
@@ -68,9 +60,7 @@ aeo-view-port#about{
 
 
 
-.intro-header{
-  margin: 50px;
-}
+
 
 
 
@@ -78,6 +68,7 @@ aeo-view-port#about{
 .slant{
 
   clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+  height: 500px;
 
 
 }

@@ -2,63 +2,28 @@ ul{
   list-style-type: none;
   display: block;
   padding: 0px;
-}
 
-
-
-.color{
-
-
-  height: 30px;
+  .settings-item{
+    height: 30px;
     width: 30px;
     margin: 0 3px;
     display: inline-block;
     cursor: pointer;
     border-radius: 50%;
-    transition: .4s;
+    transition: .8s;
 
+    &#beach-theme-select{ background: #BCAAA4}
+    &#beach-theme-select{ background: #BCAAA4}
+    &#tropical-theme-select{ background:#03A9F4}
+    &#midnight-theme-select{ background:#512DA8 }
+    &#arizona-theme-select{background: #8D6E63 }
+    &#pirate-theme-select{background: #212121}
+    &#corp-theme-select{background: #607D8B}
+    &#tech-theme-select{background: #1DE9B6}
+    &#lush-theme-select{background: #2E7D32}
 
-  &:hover{
-    transform: scale(1.2);
+    &:hover{ transform: scale(1.2) }
+
+    img{ height: 50px }
   }
-}
-
-#beach-theme-select{
-  background-color: #009688;
-}
-
-#tropical-theme-select{
-  background-color: #3F51B5;
-}
-
-#midnight-theme-select{
-  background-color: #512DA8;
-}
-
-#lush-theme-select{
-  background-color: #2E7D32;
-}
-
-#pirate-theme-select{
-  background-color: #212121;
-}
-
-#corp-theme-select{
-  background-color: #607D8B;
-}
-
-#tech-theme-select{
-  background-color: #1DE9B6;
-}
-
-#arizona-theme-select{
-  background-color: #8D6E63;
-}
-
-#img1{
-
-}
-
-#img2{
-  background-image: url('/assets/brian-francis-pro2.jpg');
 }

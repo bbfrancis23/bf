@@ -3,7 +3,7 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Subscription } from 'rxjs/Subscription';
 import { MatDialog } from '@angular/material';
 import { SettingsDialog } from './settings-dialog/settings-dialog';
-import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
+import { MatDialogRef, MAT_DIALOG_DATA, DialogPosition } from '@angular/material';
 
 import { AppService } from '../app.service';
 
@@ -16,33 +16,39 @@ import { AeoSideDrawer } from '../aeo/side-drawer/side-drawer';
 })
 export class BrianFrancisComponent implements OnInit, OnDestroy {
 
-  theme = 'corp-theme';
+  isSmall = false;
 
-  animal: string;
-  name: string;
+  photo
 
-  constructor(breakpointObserver: BreakpointObserver, public dialog: MatDialog, public appService: AppService) {
-    //breakpointObserver.observe(Breakpoints.HandsetLandscape).subscribe(result => this.isHandsetLandscape = result.matches);
+
+  constructor(public breakpointObserver: BreakpointObserver, public dialog: MatDialog, public appService: AppService) {
+    breakpointObserver.observe('(max-width: 768px)').subscribe(result => {
+      this.isSmall = result.matches;
+      if (this.isSmall) {
+        //appService.profileImgSm = true;
+        //appService.changePhoto();
+      } else {
+        //appService.profileImgSm = false;
+        //appService.changePhoto();
+      }
+    });
+
+    //breakpointObserver.observe('(min-width: 768px)').subscribe(result => {
+    //  this.isSmall = result.matches;
+    //  appService.photo = 'assets/brian-francis-sq.jpg';
+    //});
   }
 
   openDialog(): void {
-    let dialogRef = this.dialog.open(SettingsDialog, {
-      width: '250px',
-      data: { name: this.name, animal: this.animal }
-    });
-
-    dialogRef.afterClosed().subscribe(result => {
-      //console.log('The dialog was closed');
-      //console.log(result);
-    });
+    let dialogRef = this.dialog.open(SettingsDialog, { width: '250px', position: { top: '20px', left: '90px' }, hasBackdrop: false });
   }
 
   ngOnInit() {
-    this.appService.currentTheme.subscribe(theme => { this.theme = theme; });
+    //console.log(this.appService.currentPhoto);
   }
 
   ngOnDestroy() {
-    //this.observerSubscription.unsubscribe();
+
   }
 
 }

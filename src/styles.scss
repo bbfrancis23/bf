@@ -34,7 +34,7 @@
   @include custom-components-theme($midnight-theme);
 
 
-  
+
 
 }
 
@@ -129,6 +129,8 @@ body.beach-theme, body.tropical-theme, body.pirate-theme{
 }
 
 
-
+mat-dialog-container.mat-dialog-container{
+  border-radius: 15px;
+}
 
 // CUSTOM COMPONENTS //

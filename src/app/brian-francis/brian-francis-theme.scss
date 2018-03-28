@@ -18,6 +18,9 @@
 
 
   app-brian-francis{
+
+
+
     aeo-side-drawer#left-drawer{
       .aeo-sidedrawer-container{
         width: $drawer-width;
@@ -45,10 +48,54 @@
         outline-offset: -40px;
         text-shadow: 0px 5px 3px #4d4d4d
       }
+    }
+
+    aeo-view-port#about{
+
+      .small{
+          text-align: center;
+          h2{
+            font-size: 150%;
+          }
+
+      }
+
+      .row{
+        background-color: mat-color($primary);
+        color: white;
+
+        .intro-header{
+          margin: 50px;
+        }
+      }
+
+      button{
+        color: mat-color($accent, lighter);
+      }
 
 
 
+    }
 
+    .porthole{
+      position: absolute;
+
+      bottom: 70%;
+      left: 0px;
+      right: 0px;
+      width: 150px;
+      height: 150px;
+      margin-right: auto;
+      margin-left: auto;
+
+      img{
+        display: inline-block;
+        height: 100px;
+        width: 100px;
+        overflow: hidden;
+
+        border-radius: 50%;
+      }
     }
   }
 
@@ -106,12 +153,7 @@ h6{
 
 
 
-    #about{
-      .row{
-        background-color: mat-color($primary);
-        color: white;
-      }
-    }
+
 
     #testimonials{
       .row{
