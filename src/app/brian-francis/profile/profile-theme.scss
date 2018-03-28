@@ -9,86 +9,58 @@
   $foreground: map-get($theme, foreground);
   $background: map-get($theme, background);
 
-  $drawer-width: 225px;
-  $nav-button-spacing: 20px;
+  bf-profile{
+    aeo-view-port{
 
-aeo-view-port{
-
-
-
-  .small{
-      text-align: center;
-      h2{
-        font-size: 150%;
+      .small{
+          text-align: center;
+          h2{ font-size: 150% }
       }
 
-  }
+      .row{
+        background-color: mat-color($primary);
+        color: white;
 
-  .row{
-    background-color: mat-color($primary);
-    color: white;
+        .intro-header{
+          margin: 50px;
 
-    .intro-header{
-      margin: 50px;
+          .programming-icons img{
+            filter: brightness(90%);
+            transition: filter 2s;
+            height: 40px;
+            &:hover{ filter: brightness(200%) }
+          }
+        }
+
+        mat-list-item{ a{ color: white } }
+
+        .porthole{
+          position: absolute;
+          bottom: 70%;
+          left: 0px;
+          right: 0px;
+          width: 150px;
+          height: 150px;
+          margin-right: auto;
+          margin-left: auto;
+
+          img{
+            display: inline-block;
+            height: 100px;
+            width: 100px;
+            overflow: hidden;
+            border-radius: 50%;
+          }
+        }
+
+        .slant{
+          clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+          -webkit-clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+          height: 500px;
+        }
+      }
+
+      button{ color: mat-color($accent, lighter) }
     }
-
-    mat-list-item{
-      color: white;
-    }
   }
-
-  button{
-    color: mat-color($accent, lighter);
-  }
-
-
-
-}
-
-
-
-.porthole{
-    position: absolute;
-
-    bottom: 70%;
-    left: 0px;
-    right: 0px;
-    width: 150px;
-    height: 150px;
-    margin-right: auto;
-    margin-left: auto;
-
-    img{
-      display: inline-block;
-      height: 100px;
-      width: 100px;
-      overflow: hidden;
-
-      border-radius: 50%;
-    }
-  }
-
-
-
-.slant{
-
-  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
-  height: 500px;
-
-
-}
-
-
-.programming-icons img{
-  filter: brightness(90%);
-  transition: filter 2s;
-
-  height: 40px;
-
-  &:hover{
-    filter: brightness(200%);
-  }
-
-}
-
 }
