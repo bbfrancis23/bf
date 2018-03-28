@@ -16,27 +16,12 @@ import { AeoSideDrawer } from '../aeo/side-drawer/side-drawer';
 })
 export class BrianFrancisComponent implements OnInit, OnDestroy {
 
-  isSmall = false;
-
-  photo
 
 
   constructor(public breakpointObserver: BreakpointObserver, public dialog: MatDialog, public appService: AppService) {
-    breakpointObserver.observe('(max-width: 768px)').subscribe(result => {
-      this.isSmall = result.matches;
-      if (this.isSmall) {
-        //appService.profileImgSm = true;
-        //appService.changePhoto();
-      } else {
-        //appService.profileImgSm = false;
-        //appService.changePhoto();
-      }
-    });
 
-    //breakpointObserver.observe('(min-width: 768px)').subscribe(result => {
-    //  this.isSmall = result.matches;
-    //  appService.photo = 'assets/brian-francis-sq.jpg';
-    //});
+
+
   }
 
   openDialog(): void {
@@ -44,7 +29,7 @@ export class BrianFrancisComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
-    //console.log(this.appService.currentPhoto);
+
   }
 
   ngOnDestroy() {

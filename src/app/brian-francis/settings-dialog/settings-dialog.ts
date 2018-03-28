@@ -21,8 +21,8 @@ import { AppService } from '../../app.service';
       </ul>
       <p>Choose a Photo</p>
       <ul>
-        <li class="settings-item" (click)="appService.profileImgIndex=0;"><img src="assets/brian-francis-pro.jpg"></li>
-        <li class="settings-item" (click)="appService.profileImgIndex=1;"><img src="assets/brian-francis-pro2.jpg"></li>
+        <li class="settings-item" (click)="appService.profileImgIndex=0;"><img src="assets/brian-francis.jpg"></li>
+        <li class="settings-item" (click)="appService.profileImgIndex=1;"><img src="assets/brian-francis-2.jpg"></li>
       </ul>
       <br>
       </mat-dialog-content>

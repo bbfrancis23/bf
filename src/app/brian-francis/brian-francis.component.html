@@ -28,7 +28,7 @@
 <aeo-view-port id="about" [state]='show'>
   <div class="vp-padding"></div>
     <div class="vp-padding"></div>
-  <div class="container" [ngClass]="{'small': isSmall}">
+  <div class="container" [ngClass]="{'small': appService.isSmall}">
     <div class="row">
       <div class="col-12 col-sm-12 col-md-7 " >
         <div class="intro-header" >
@@ -57,13 +57,13 @@
 
           </div>
         </div>
-        <div  class="col-md-5" [ngClass]="{'porthole': isSmall}" style="padding-right: 0px">
-          <img [ngClass]="{'slant': !isSmall, 'float-right': !isSmall}" src="/assets/brian-francis.jpg"   >
+        <div  class="col-md-5" [ngClass]="{'porthole': appService.isSmall}" style="padding-right: 0px">
+          <img [ngClass]="{'slant': !appService.isSmall, 'float-right': !appService.isSmall}" src="/assets/brian-francis.jpg"   >
         </div>
       </div>
 </div>
 </aeo-view-port>
-
+{{appService.isSmall}}
 <aeo-view-port id="experience">
     <div class="vp-padding"></div>
     <div class="container">
