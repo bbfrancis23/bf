@@ -14,25 +14,15 @@ import { AeoSideDrawer } from '../aeo/side-drawer/side-drawer';
   templateUrl: './brian-francis.component.html',
   styleUrls: ['./brian-francis.component.scss']
 })
-export class BrianFrancisComponent implements OnInit, OnDestroy {
-
-  subs = [];
-  profileImg = '';
-
-  constructor(public breakpointObserver: BreakpointObserver, public dialog: MatDialog, public appService: AppService) {
+export class BrianFrancisComponent {
 
 
 
-  }
+  constructor(public dialog: MatDialog, public appService: AppService) { }
 
   openDialog(): void {
     let dialogRef = this.dialog.open(SettingsDialog, { width: '250px', position: { top: '20px', left: '90px' }, hasBackdrop: false });
   }
 
-  ngOnInit() {
-
-  }
-
-  ngOnDestroy() { this.subs.forEach(sub => sub.unsubscribe()) }
 
 }

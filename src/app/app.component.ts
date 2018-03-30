@@ -39,8 +39,8 @@ export class AppComponent implements OnInit {
   ngOnInit() {
 
 
-    this.overlayContainer.getContainerElement().classList.add('beach-theme');
-    document.body.classList.add('mat-app-background', 'beach-theme');
+    this.overlayContainer.getContainerElement().classList.add('corp-theme');
+    document.body.classList.add('mat-app-background', 'corp-theme');
 
 
     //  this.appService.currentTheme.subscribe(theme => { console.log(this.overlayContainer); this.overlayContainer.getContainerElement().className. });

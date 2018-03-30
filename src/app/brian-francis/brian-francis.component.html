@@ -24,38 +24,93 @@
 
   <button id="settings"  mat-fab (click)="openDialog()" matTooltipShowDelay="1000" matTooltip="App Settings"><mat-icon>settings</mat-icon></button>
 
-<bf-profile id="#about" ></bf-profile>
+<bf-profile id="about" ></bf-profile>
+<div class="vp-padding"></div>
+
+<div class="container">
+  <mat-card>
+    <p>
+      I have had over 15 year experience in Web Development and Programming. I studied Computer Science at Weber State University.
+      I was fully responsible for the “Marine Classifieds” program at iboats.com.
+      This program collects, edits, displays marine advertisements (mainly boats for sale) on  boats.iboats.com, from boat dealers, brokers  and  individual users.
+      This included “For Sale By Owner”, “New Boat research”,  “Dealer Locator” and various backend administration programs. During my tenure at iboats classifieds ads went from a few 100 to 50,000.
+    </p>
+  </mat-card>
+</div>
+
 
 
 <aeo-view-port id="experience">
     <div class="vp-padding"></div>
     <div class="container">
-      <div class="timeline">
-        <div class="timeline-block">
-           <div class="dot"><h6><mat-icon>code</mat-icon></h6></div>
-           <div class="content">
-             <h1>2017</h1>
-             <h1>AEO</h1>
-             lkasjfdlkasjdfl j<br>
-             askhfdkajshdfkj <br>
+      <div [ngClass]="{'timeline': !appService.isSmall}" >
+        <div [ngClass]="{'timeline-block': !appService.isSmall, 'card': appService.isSmall}" >
+           <div [ngClass]="{ 'dot': !appService.isSmall, 'card-header': appService.isSmall}"><h6><mat-icon>code</mat-icon></h6></div>
+           <div [ngClass]="{'content': !appService.isSmall, 'card-body': appService.isSmall}" >
+             <h2 [ngClass]="{'card-title': appService.isSmall}" >Full Stack Developer</h2>
+             <h2>AEO - TECH</h2>
+             <p>Dec 2017 - Present</p>
+             <span class="badge badge-success">Angular 4 and 5</span>
+             <span class="badge badge-success">Angular Material</span>
+             <span class="badge badge-success">Jasmine</span>
+             <span class="badge badge-success">NodeJS Express</span>
+            <span class="badge badge-primary">JavaScript</span>
+              <span class="badge badge-primary">TypeScript</span>
+              <span class="badge badge-warning">GIT</span>
+              <span class="badge badge-warning">Illustrator</span>
+             <span class="badge badge-warning">PhotoShop</span>
+             <span class="badge badge-warning">UNIX</span>
+             <span class="badge badge-warning">Windows</span>
+             <span class="badge badge-info">MongoDB</span>
+             <span class="badge badge-dark">Bootstrap</span>
+             <span class="badge badge-dark">CSS3</span>
+             <span class="badge badge-dark">HTML5</span>
+             <span class="badge badge-dark">SASS</span>
            </div>
         </div>
-        <div class="timeline-block">
-           <div class="dot"><h6>F</h6></div>
-           <div class="content">
-             <h1>2016</h1>
-             <h1>Free</h1>
-             lkasjfdlkasjdfl j<br>
-             askhfdkajshdfkj <br>
+        <div [ngClass]="{'timeline-block': !appService.isSmall, 'card': appService.isSmall}" >
+          <div [ngClass]="{ 'dot': !appService.isSmall, 'card-header': appService.isSmall}"><h6>F</h6></div>
+          <div [ngClass]="{'content': !appService.isSmall, 'card-body': appService.isSmall}" >
+            <h2 [ngClass]="{'card-title': appService.isSmall}" >Full Stack Developer</h2>
+             <h2>Freelance</h2>
+             <p>Nov 2016 - Present</p>
+             <span class="badge badge-success">Angular 4 and 5</span>
+             <span class="badge badge-success">AngularJS</span>
+             <span class="badge badge-success">Angular Material</span>
+             <span class="badge badge-success">JQuery</span>
+             <span class="badge badge-primary">JavaScript</span>
+             <span class="badge badge-primary">PERL</span>
+             <span class="badge badge-primary">PHP</span>
+             <span class="badge badge-primary">TypeScript</span>
+             <span class="badge badge-warning">GIT</span>
+             <span class="badge badge-warning">Illustrator</span>
+             <span class="badge badge-warning">PhotoShop</span>
+             <span class="badge badge-warning">UNIX</span>
+             <span class="badge badge-warning">Windows</span>
+             <span class="badge badge-info">MySQL</span>
+             <span class="badge badge-info">PostgreSQL</span>
+             <span class="badge badge-dark">Bootstrap</span>
+             <span class="badge badge-dark">CSS3</span>
+             <span class="badge badge-dark">HTML5</span>
+             <span class="badge badge-dark">LESS</span>
+             <span class="badge badge-dark">SASS</span>
            </div>
         </div>
-        <div class="timeline-block">
-           <div class="dot"><h6><mat-icon>directions_boat</mat-icon></h6></div>
-           <div class="content">
-             <h1>2000</h1>
-             <h1>iboats</h1>
-             lkasjfdlkasjdfl j<br>
-             askhfdkajshdfkj <br>
+        <div [ngClass]="{'timeline-block': !appService.isSmall, 'card': appService.isSmall}" >
+          <div [ngClass]="{ 'dot': !appService.isSmall, 'card-header': appService.isSmall}"><h6><mat-icon>directions_boat</mat-icon></h6></div>
+          <div [ngClass]="{'content': !appService.isSmall, 'card-body': appService.isSmall}" >
+            <h2 [ngClass]="{'card-title': appService.isSmall}" >Full Stack Developer</h2>
+             <h2>iBOATS</h2>
+             <p>April 2000 - Oct 2016</p>
+             <span class="badge badge-primary">Perl</span>
+             <span class="badge badge-primary">JavaScript</span>
+             <span class="badge badge-primary">JQuery</span>
+             <span class="badge badge-warning">GIT</span>
+             <span class="badge badge-warning">UNIX</span>
+             <span class="badge badge-warning">Windows</span>
+             <span class="badge badge-info">PostgreSQL</span>
+             <span class="badge badge-dark">HTML5</span>
+             <span class="badge badge-dark">CSS3</span>
            </div>
         </div>
       </div>
@@ -276,15 +331,20 @@
   <div class="vp-padding"></div>
   <div class="container" >
     <div class="row">
-      <div class="col-md-8" ><img src="/assets/iboats-thumb.png" width=100% height=100%></div>
+      <div class="col-md-8 img-container" >
+
+        <img class="web-img" src="/assets/iboats-thumb.jpg" width=100% height=100%>
+        
+
+      </div>
       <div class="col-md-4" >
         <div class="container" >
           <div class="row img-container" >
-            <img src="/assets/jody-thumb.png" width=100%  height=100%>
+            <img class="web-img" src="/assets/jody-thumb-s1-1.jpg" width=100%  height=100%>
           </div>
           <br>
-          <div class="row" >
-            <img  src="/assets/jody-thumb.png" width=100% height=100% style="position: relative; top: 5px;">
+          <div class="row img-container" >
+            <img  class="web-img" src="/assets/aeo-thumb-s1-1.jpg" width=100% height=100% style="position: relative; top: 5px;">
           </div>
         </div>
       </div>

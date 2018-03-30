@@ -55,7 +55,7 @@
 
 
 
-    
+
   }
 
 /////////////////////////////////////
@@ -77,8 +77,18 @@
 
   overflow: hidden;
 
-  img{
+  &:hover .overlay{
+    opacity: .5;
+  }
 
+
+
+
+
+
+
+  img.web-img{
+  //border: 1px solid red;
 
   transition: all 0.3s;
 
@@ -136,6 +146,15 @@ h6{
     #experience{
       .container{
 
+      .card{
+        margin: 25px;
+      }
+
+      .card-header{
+        background-color: mat-color($primary);
+        color: white;
+      }
+
       div.timeline{
         position:relative;
 
@@ -148,13 +167,15 @@ h6{
           top: 0;
           bottom: 23px;
           left: 50%;
-          height: 50%;
+          height: 60%;
           width: 4px;
           opacity: 0.3;
           background: mat-color($primary);
         }
 
         .timeline-block{
+
+          margin-bottom: 5px;
 
           &:nth-child(even) .content{
             float: right;
@@ -163,7 +184,7 @@ h6{
             background-color: white;
 
             &:before{
-              top: 25px;
+              top: 22px;
               left: auto;
               right: 100%;
               z-index: -2;
@@ -214,7 +235,7 @@ h6{
               width: 58px;
               height: 4px;
               position: absolute;
-              top: 26px;
+              top: 22px;
               left: 100%;
               z-index: -2;
               opacity: 0.4;
