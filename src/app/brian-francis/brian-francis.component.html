@@ -33,7 +33,7 @@
       I have had over 15 year experience in Web Development and Programming. I studied Computer Science at Weber State University.
       I was fully responsible for the “Marine Classifieds” program at iboats.com.
       This program collects, edits, displays marine advertisements (mainly boats for sale) on  boats.iboats.com, from boat dealers, brokers  and  individual users.
-      This included “For Sale By Owner”, “New Boat research”,  “Dealer Locator” and various backend administration programs. During my tenure at iboats classifieds ads went from a few 100 to 50,000.
+      This included “For Sale By Owner”, “New Boat research”,  “Dealer Locator” and various backend administration programs. During my tenure at iboats classifieds ads went from a few 100 ads to 50,000.
     </p>
   </mat-card>
 </div>
@@ -327,46 +327,62 @@
 
 </aeo-view-port>
 
-<aeo-view-port>
+<aeo-view-port id="portfolio">
   <div class="vp-padding"></div>
   <div class="container" >
     <div class="row">
-      <div class="col-md-8 img-container" >
+      <div class="col-md-4" >
+        <div class="img-container">
+          <img class="web-img" src="/assets/iboats-thumb.jpg" width=100%>
+          <div class="overlay">
 
-        <img class="web-img" src="/assets/iboats-thumb.jpg" width=100% height=100%>
-        
+          </div>
+          <div class="text">iBOATS</div>
+        </div>
 
       </div>
       <div class="col-md-4" >
-        <div class="container" >
-          <div class="row img-container" >
-            <img class="web-img" src="/assets/jody-thumb-s1-1.jpg" width=100%  height=100%>
+        <div class="img-container">
+          <img class="web-img" src="/assets/jody-thumb-s1-1.jpg" width=100% >
+          <div class="overlay">
+
           </div>
-          <br>
-          <div class="row img-container" >
-            <img  class="web-img" src="/assets/aeo-thumb-s1-1.jpg" width=100% height=100% style="position: relative; top: 5px;">
-          </div>
+          <div class="text">Magic Healing Hands</div>
         </div>
+
+      </div>
+      <div class="col-md-4" >
+        <div class="img-container">
+          <img class="web-img" src="/assets/aeo-thumb-s1-1.jpg" width=100%>
+          <div class="overlay">
+
+          </div>
+          <div class="text">AEO-TECH</div>
+        </div>
+
       </div>
     </div>
   </div>
 </aeo-view-port>
 
 <aeo-view-port id="testimonials">
+
   <div class="vp-padding"></div>
+
+
 
   <div class="container" >
     <div class="row">
-      <div  class="d-none d-sm-none d-md-block col-md-5 " style="padding-left: 0px; margin-left: 0px;">
+      <div  class="d-none d-sm-none d-md-none d-lg-block col-lg-5 " style="padding-left: 0px; margin-left: 0px;">
 
-        <img class="float-left right-slant" src="/assets/brianm.png" height="400px" >
+        <img class="float-left right-slant" src="/assets/brianm.jpg" height="500px" >
       </div>
-      <div class="col-sm-12 col-md-7" >
+      <div class="col-sm-12 col-md-12 col-lg-7" >
         <div style="margin: auto; width: 60%; padding: 10px;">
           <span class="quote">“</span><br>
            The quality of his work has allowed us to climb from the ranks of “also has classifieds” to an industry leader. We trust him to be responsible for roughly a third of iboats total traffic (our life­blood). He has proven his ability to work well with other programmers to make positive changes to the underlying data structure which is common to other products in the company
 
-          <br><br><span class="signature"> ~ Brian Mellenthin </span> - Former VP Operations iboats.com.
+          <br><br><span class="signature"> ~ Brian Mellenthin </span> <br>- Former VP Operations iboats.com.
         </div>
       </div>
 
@@ -375,21 +391,28 @@
   <br><br>
   <div class="container" >
     <div class="row">
-      <div class="col-sm-12 col-md-7" >
+      <div class="col-sm-12 col-md-12 col-lg-7" >
         <div style="border: 1px solid red;" style=" margin: auto;
     width: 60%;
     padding: 10px;">
           <span class="quote">“</span><br>
           Brian absolutely exceeded all of my expectations in designing my website. He took all of my content and transformed into a phenomenal website. He edited my photos, created my logo, found perfect pictures to represent my services.
 All of my categories are layout are perfectly placed and the site flows magically. I highly recommend Brian. He is very prompt and delivers amazing service.
-          <br><br><span class="signature"> ~ Jody Farnsworth Uribe</span> - Owner magichealinghands.com
+          <br><br><span class="signature"> ~ Jody Farnsworth Uribe</span> <br>- Owner magichealinghands.com
         </div>
       </div>
-      <div  class="d-none d-sm-none d-md-block col-md-5 " style="padding-right: 0px">
+      <div  class="d-none d-sm-none d-md-none d-lg-block col-lg-5 " style="padding-right: 0px">
 
-        <img class="float-right slant" src="/assets/jody.jpg" height="400px" >
+        <img class="float-right left-slant" src="/assets/jody.jpg" height="500px" >
       </div>
     </div>
 </div>
+</aeo-view-port>
+
+<aeo-view-port id="footer" [state]="show">
+  <div class="vp-padding"></div>
+  <footer class="container">
+    Design and written by Brian Francis <span class="pg-icons"> <img src="/assets/img/angular.png"><img src="/assets/img/bootstrap.png"></span><br><br>
+  </footer>
 </aeo-view-port>
 </div>
