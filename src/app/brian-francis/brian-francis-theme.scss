@@ -12,19 +12,11 @@
   $drawer-width: 225px;
   $nav-button-spacing: 20px;
 
-
-
-
-
-
   app-brian-francis{
 
     aeo-side-drawer#left-drawer{
       .aeo-sidedrawer-container{
         width: $drawer-width;
-
-
-
 
         button.aeo-sidedrawer-control{
           top: $nav-button-spacing;
@@ -49,21 +41,29 @@
         outline-offset: -40px;
         text-shadow: 0px 5px 3px #4d4d4d
       }
-
-
     }
 
+    aeo-view-port{
+      div.section-header{
+        text-align: center;
+      }
 
+      h2{
+        margin-bottom: 50px;
+      }
+    }
 
-
+    footer{
+      color: mat-color($foreground, text);
+    }
   }
 
 /////////////////////////////////////
 
-  h3.section{
-    font-family: 'Montserrat', sans-serif;
-    text-shadow: 0px 5px 3px #4d4d4d;
-    font-size: 250%;
+  h2.section{
+    font-size: 300%;
+    font-weight: 600;
+    color: mat-color($foreground, text);
   }
 
   * {

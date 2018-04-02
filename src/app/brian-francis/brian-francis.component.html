@@ -25,23 +25,10 @@
   <button id="settings"  mat-fab (click)="openDialog()" matTooltipShowDelay="1000" matTooltip="App Settings"><mat-icon>settings</mat-icon></button>
 
 <bf-profile id="about" ></bf-profile>
-<div class="vp-padding"></div>
-
-<div class="container">
-  <mat-card>
-    <p>
-      I have had over 15 year experience in Web Development and Programming. I studied Computer Science at Weber State University.
-      I was fully responsible for the “Marine Classifieds” program at iboats.com.
-      This program collects, edits, displays marine advertisements (mainly boats for sale) on  boats.iboats.com, from boat dealers, brokers  and  individual users.
-      This included “For Sale By Owner”, “New Boat research”,  “Dealer Locator” and various backend administration programs. During my tenure at iboats classifieds ads went from a few 100 ads to 50,000.
-    </p>
-  </mat-card>
-</div>
-
-
 
 <aeo-view-port id="experience">
     <div class="vp-padding"></div>
+    <div class="section-header"><h2 class="section">EXPERIENCE</h2></div>
     <div class="container">
       <div [ngClass]="{'timeline': !appService.isSmall}" >
         <div [ngClass]="{'timeline-block': !appService.isSmall, 'card': appService.isSmall}" >
@@ -117,10 +104,11 @@
     </div>
 </aeo-view-port>
 
-<aeo-view-port id="skills">
+<aeo-view-port id="skills" >
   <div class="vp-padding"></div>
+  <div class="section-header"><h2 class="section">SKILLS</h2></div>
   <div class="container text-center">
-      <h3 class="section">SKILLS</h3><br>
+
     <div class="row">
       <div class="col-md-4">
         <div class="text-center"><strong class="mat-title">Programming</strong></div>
@@ -329,6 +317,7 @@
 
 <aeo-view-port id="portfolio">
   <div class="vp-padding"></div>
+  <div class="section-header"><h2 class="section">PORTFOLIO</h2></div>
   <div class="container" >
     <div class="row">
       <div class="col-md-4" >
@@ -370,7 +359,7 @@
   <div class="vp-padding"></div>
 
 
-
+  <div class="section-header"><h2 class="section">TESTIMONIALS</h2></div>
   <div class="container" >
     <div class="row">
       <div  class="d-none d-sm-none d-md-none d-lg-block col-lg-5 " style="padding-left: 0px; margin-left: 0px;">
