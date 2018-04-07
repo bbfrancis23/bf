@@ -8,11 +8,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { MatButtonModule, MatCardModule, MatDialogModule, MatIconModule, MatListModule, MatSidenavModule, MatToolbarModule, MatTooltipModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
-import { MilieuModule } from './milieu/milieu.module';
 import { AeoModule } from './aeo/aeo.module';
 import { BrianFrancisComponent } from './brian-francis/brian-francis.component';
 import { BrianFrancisProfile } from './brian-francis/profile/profile';
+
 import { SettingsDialog } from './brian-francis/settings-dialog/settings-dialog';
+import { ImgViewerDialog } from './brian-francis/img-viewer-dialog/img-viewer-dialog';
 
 import { LayoutModule } from '@angular/cdk/layout';
 
@@ -25,7 +26,8 @@ import { OverlayContainer } from '@angular/cdk/overlay';
     AppComponent,
     BrianFrancisComponent,
     BrianFrancisProfile,
-    SettingsDialog
+    SettingsDialog,
+    ImgViewerDialog
   ],
   imports: [
     BrowserModule,
@@ -39,7 +41,6 @@ import { OverlayContainer } from '@angular/cdk/overlay';
     MatSidenavModule,
     MatToolbarModule,
     MatTooltipModule,
-    MilieuModule,
     LayoutModule,
     AeoModule
   ],

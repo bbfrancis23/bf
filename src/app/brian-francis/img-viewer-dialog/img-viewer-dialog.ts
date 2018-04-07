@@ -5,6 +5,4 @@ import { MatDialogRef } from '@angular/material';
   selector: 'img-viewer-dialog',
   template: `Hello`
 })
-export class ImgViewerDialog {
-  constructor(public dialogRef: MatDialogRef<ImgViewerDialog>) { }
-}
+export class ImgViewerDialog { constructor(public dialogRef: MatDialogRef<ImgViewerDialog>) { } }
