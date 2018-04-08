@@ -1,0 +1,29 @@
+@import '~@angular/material/theming';
+
+@mixin img-viewer-dialog-theme($theme){
+
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $warn: map-get($theme, warn);
+  $foreground: map-get($theme, foreground);
+  $background: map-get($theme, background);
+
+  img-viewer-dialog{
+    .alert-primary{
+      background-color: mat-color($primary, darker);
+      color: white;
+    }
+
+    .carousel-control-prev, .carousel-control-next{
+      //opacity: .25;
+    }
+
+    .carousel-indicators li{
+      background-color: mat-color($accent);
+    }
+
+    .carousel-indicators li.active{
+      background-color: mat-color($accent, darker);
+    }
+  }
+}

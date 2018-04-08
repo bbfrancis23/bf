@@ -49,7 +49,7 @@ import { OverlayContainer } from '@angular/cdk/overlay';
   ],
 
 
-  entryComponents: [SettingsDialog],
+  entryComponents: [SettingsDialog, ImgViewerDialog],
   providers: [AppService],
   bootstrap: [AppComponent]
 })

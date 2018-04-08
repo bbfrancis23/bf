@@ -14,12 +14,14 @@
 @import "app/aeo/side-drawer/side-drawer-theme.scss";
 @import "app/brian-francis/brian-francis-theme.scss";
 @import "app/brian-francis/profile/profile-theme.scss";
+@import "app/brian-francis/img-viewer-dialog/img-viewer-dialog-theme.scss";
 
 
 @mixin custom-components-theme($theme){
   @include side-drawer-theme($theme);
   @include brian-francis-theme($theme);
   @include profile-theme($theme);
+  @include img-viewer-dialog-theme($theme);
 }
 
 .beach-theme{
@@ -99,6 +101,13 @@ h1{
   font-family: 'Montserrat', sans-serif;
   text-shadow: 0px 5px 3px #4d4d4d;
 }
+
+.carousel-control-next, .carousel-control-prev{
+  opacity: .75;
+}
+
+
+
 
 // CUSTOM THEME //
 
