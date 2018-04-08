@@ -44,8 +44,16 @@ export class BrianFrancisComponent {
       { src: '/assets/jody2.png', title: 'REIKI' },
       { src: '/assets/jody3.png', title: 'TESTIMONIALS' },
       { src: '/assets/jody4.png', title: 'CONTACT' }
-    ], 'aeo-tech': [
-
+    ], 'aeo': [
+      { src: '/assets/aeo1.png', title: 'AEO_TECH' },
+      { src: '/assets/aeo2.png', title: 'QUICK SEARCH' },
+      { src: '/assets/aeo3.png', title: 'FILTER PULLOUT DRAWER FOR MOBILE' },
+      { src: '/assets/aeo4.png', title: 'ACCOUNT INFO' },
+      { src: '/assets/aeo5.png', title: 'FILTERED LIST' },
+      { src: '/assets/aeo6.png', title: 'LOGIN MODAL' },
+      { src: '/assets/aeo7.png', title: 'ACCOUT INFO WIDE SCREEN' },
+      { src: '/assets/aeo8.png', title: 'FAVORITES FILTER CLOSED' },
+      { src: '/assets/aeo9.png', title: 'MENU DROPDOWN' },
     ]
   };
 
@@ -57,11 +65,14 @@ export class BrianFrancisComponent {
   }
 
   openIboatsImgDialog() {
-    let dialogRef = this.dialog.open(ImgViewerDialog, { data: { images: this.portfolio.iboats } });
+    let dialogRef = this.dialog.open(ImgViewerDialog, { data: { images: this.portfolio.iboats, title: 'iBOATS' } });
   }
 
   openJodyImgDialog() {
-    let dialogRef = this.dialog.open(ImgViewerDialog, { data: { images: this.portfolio.jody } });
+    let dialogRef = this.dialog.open(ImgViewerDialog, { data: { images: this.portfolio.jody, title: 'MAGIC HEALING HANDS' } });
   }
 
+  openAeoImgDialog() {
+    let dialogRef = this.dialog.open(ImgViewerDialog, { data: { images: this.portfolio.aeo, title: 'AEO-TECH' } });
+  }
 }
