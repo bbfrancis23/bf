@@ -7,6 +7,9 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 @Injectable()
 export class AppService implements OnDestroy {
 
+  themes = ['beach', 'tropical', 'midnight', 'lush', 'pirate', 'corp', 'tech', 'arizona'];
+
+
   private readonly themeSource = new BehaviorSubject<string>('corp-theme');
   readonly currentTheme = this.themeSource.asObservable();
   public changeTheme(theme: string) { this.themeSource.next(theme) }
@@ -25,7 +28,7 @@ export class AppService implements OnDestroy {
     this.profileImgSource.next(this.isSmall ? this.profileImgSq[this.profileImgIndex] : this.profileImg[this.profileImgIndex]);
   }
 
-  hero = 'assets/corp-hero.jpg';
+  hero = '/assets/img/theme/background/corp.jpg';
 
   bpSubscription = this.breakpointObserver.observe('(max-width: 768px)').subscribe(result => {
     this.isSmall = result.matches;
