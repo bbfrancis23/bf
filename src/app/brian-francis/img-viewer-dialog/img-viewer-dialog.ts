@@ -10,13 +10,13 @@ import { AppService } from '../../app.service';
     <mat-dialog-content>
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
-    <li  *ngFor="let img of images; let i = index" (click)="imagesIndex = i" matTooltip="{{img.title}}" [ngClass]="{'active': imagesIndex === i}"></li>
+    <li  *ngFor="let img of images; let i = index" (click)="imagesIndex = i" matTooltip="{{img?.title}}" [ngClass]="{'active': imagesIndex === i}"></li>
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block " [src]="images[imagesIndex].src" alt="First slide" style="height: 75vh; ">
+      <img class="d-block " [src]="images[imagesIndex].src" alt="First slide" style="height: 50vh; ">
       <div class="carousel-caption d-none d-md-block">
-        <p class="alert alert-primary">{{images[imagesIndex].title}}</p>
+        <p class="alert alert-primary">{{images[imagesIndex]?.title}}</p>
       </div>
     </div>
   </div>
@@ -38,7 +38,7 @@ import { AppService } from '../../app.service';
 })
 export class ImgViewerDialog {
   title: '';
-  images: [{}];
+  images: [{ src: '', title: '' }];
   imagesIndex = 0;
 
   constructor(public dialogRef: MatDialogRef<ImgViewerDialog>, @Inject(MAT_DIALOG_DATA) public data: any) {

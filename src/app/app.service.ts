@@ -9,7 +9,7 @@ export class AppService implements OnDestroy {
 
   private readonly themeSource = new BehaviorSubject<string>('corp-theme');
   readonly currentTheme = this.themeSource.asObservable();
-  private changeTheme(theme: string) { this.themeSource.next(theme) }
+  public changeTheme(theme: string) { this.themeSource.next(theme) }
 
   profileImg = ['/assets/brian-francis.jpg', '/assets/brian-francis-2.jpg'];
   profileImgSq = ['/assets/brian-francis-sq.jpg', '/assets/brian-francis-2sq.jpg'];
@@ -21,7 +21,7 @@ export class AppService implements OnDestroy {
 
   private readonly profileImgSource = new BehaviorSubject<string>(this.profileImg[this.profileImgIndex]);
   readonly currentProfileImg = this.profileImgSource.asObservable();
-  private changeprofileImg() {
+  public changeprofileImg() {
     this.profileImgSource.next(this.isSmall ? this.profileImgSq[this.profileImgIndex] : this.profileImg[this.profileImgIndex]);
   }
 

@@ -27,21 +27,21 @@ export class BrianFrancisComponent {
 
   portfolio = {
     'iboats': [
-      { src: '/assets/iboats1.png', title: 'FEATURED BOATS' },
-      { src: '/assets/iboats2.png', title: 'BOAT BRANDS FOR SALE' },
-      { src: '/assets/iboats3.png', title: 'BOAT AD' },
-      { src: '/assets/iboats4.png', title: 'DEALER BOATS BY CONDITION AND TYPE IN STATE - CITY FOR SALE' },
-      { src: '/assets/iboats5.png', title: 'BOAT TYPES FOR SALE' },
-      { src: '/assets/iboats6.png', title: 'SALE A BOAT SIGN UP' },
-      { src: '/assets/iboats7.png', title: 'SALE A BOAT ACCOUNT ACCOUNT INFO' },
-      { src: '/assets/iboats8.png', title: 'PURCHASE A BOAT AD' },
-      { src: '/assets/iboats9.png', title: 'CREATE A BOAT AD' },
-      { src: '/assets/iboats10.png', title: 'NEW BOAT RESEARCH' },
-      { src: '/assets/iboats11.png', title: 'BOATING CLASSIFIEDS' }
+      { src: '/assets/iboats1.jpg', title: 'FEATURED BOATS' },
+      { src: '/assets/iboats2.jpg', title: 'BOAT BRANDS FOR SALE' },
+      { src: '/assets/iboats3.jpg', title: 'BOAT AD' },
+      { src: '/assets/iboats4.jpg', title: 'DEALER BOATS BY CONDITION AND TYPE IN STATE - CITY FOR SALE' },
+      { src: '/assets/iboats5.jpg', title: 'BOAT TYPES FOR SALE' },
+      { src: '/assets/iboats6.jpg', title: 'SALE A BOAT SIGN UP' },
+      { src: '/assets/iboats7.jpg', title: 'SALE A BOAT ACCOUNT ACCOUNT INFO' },
+      { src: '/assets/iboats8.jpg', title: 'PURCHASE A BOAT AD' },
+      { src: '/assets/iboats9.jpg', title: 'CREATE A BOAT AD' },
+      { src: '/assets/iboats10.jpg', title: 'NEW BOAT RESEARCH' },
+      { src: '/assets/iboats11.jpg', title: 'BOATING CLASSIFIEDS' }
     ],
     'jody': [
       { src: '/assets/jody1.png', title: 'MAGIC HEALING HANDS' },
-      { src: '/assets/jody2.png', title: 'REIKI' },
+      { src: '/assets/jody2.jpg', title: 'REIKI' },
       { src: '/assets/jody3.png', title: 'TESTIMONIALS' },
       { src: '/assets/jody4.png', title: 'CONTACT' }
     ], 'aeo': [
