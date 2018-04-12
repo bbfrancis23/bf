@@ -39,7 +39,7 @@ export class BrianFrancisComponent {
       { src: `${this.appService.imgDir}iBOATS/promo.jpg`, title: 'Promo', link: 'https://boats.iboats.com/sell-a-boat2/login.cgi' },
       { src: `${this.appService.imgDir}iBOATS/record.jpg`, title: 'Research Item', link: 'http://boats.iboats.com/research/2018-newport-vessel-dana/1869650.html' },
       { src: `${this.appService.imgDir}iBOATS/research.jpg`, title: 'Research', link: 'http://boats.iboats.com/research/' },
-      { src: `${this.appService.imgDir}iBOATS/type-listing.jpg`, title: 'Type Listing', link: 'http://boats.iboats.com/bass-boats/' },
+      { src: `${this.appService.imgDir}iBOATS/type-listings.jpg`, title: 'Type Listing', link: 'http://boats.iboats.com/bass-boats/' },
       { src: `${this.appService.imgDir}iBOATS/research-type-listing.jpg`, title: 'Research Type Listing', link: 'http://boats.iboats.com/research/bass-boats/t200033/' },
 
     ],

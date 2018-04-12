@@ -15,7 +15,7 @@ export class AppService implements OnDestroy {
   readonly currentTheme = this.themeSource.asObservable();
   public changeTheme(theme: string) { this.themeSource.next(theme) }
 
-  profileImg = ['/assets/img/brian-francis.jpg', '/assets/img/brian-francis.jpg'];
+  profileImg = ['/assets/img/brian-francis.jpg', '/assets/img/brian-francis-alt.jpg'];
   profileImgSq = ['/assets/img/brian-francis-square.jpg', '/assets/img/brian-francis-square.jpg'];
 
   profileImgIndex = 0;

@@ -11,7 +11,13 @@ export class BrianFrancisProfile implements OnDestroy {
   profileImg = '';
 
   constructor(public appService: AppService) {
-    let sub = this.appService.currentProfileImg.subscribe(img => this.profileImg = img);
+    let sub = this.appService.currentProfileImg.subscribe(
+      img => {
+        this.profileImg = img;
+
+        console.log(this.profileImg);
+      }
+    );
     this.subs.push(sub);
   }
 
