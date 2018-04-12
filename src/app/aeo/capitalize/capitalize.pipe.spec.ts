@@ -11,7 +11,7 @@ describe('CapitalizePipe', () => {
     expect(pipe.transform('abc def', true)).toBe('Abc Def');
   });
 
-  it('transforms "abc def" to "Abc Def"', () => {
+  it('transforms "abc def" to "Abc def"', () => {
     expect(pipe.transform('abc def', false)).toBe('Abc def');
   });
 
