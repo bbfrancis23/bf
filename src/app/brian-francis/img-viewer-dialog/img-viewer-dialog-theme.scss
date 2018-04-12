@@ -25,5 +25,11 @@
     .carousel-indicators li.active{
       background-color: mat-color($accent, darker);
     }
+
+    .alert{
+      a{
+        color: white;
+      }
+    }
   }
 }

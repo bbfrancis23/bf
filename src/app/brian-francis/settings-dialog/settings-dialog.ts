@@ -19,7 +19,6 @@ import { AppService } from '../../app.service';
       </ul>
       <br>
       </mat-dialog-content>
-      <br>
       <button mat-mini-fab  [mat-dialog-close]="true"  ><mat-icon  aria-label="Okay">check</mat-icon></button>
     </div>`,
   styleUrls: ['./settings-dialog.scss']

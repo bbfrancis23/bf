@@ -54,18 +54,5 @@ import { OverlayContainer } from '@angular/cdk/overlay';
   bootstrap: [AppComponent]
 })
 export class AppModule {
-  //constructor(public overlayContainer: OverlayContainer, public appService: AppService) {
 
-  //this.appService.currentTheme.subscribe(theme => { console.log(theme); this.overlayContainer.getContainerElement().classList.add(theme); });
-
-  //overlayContainer.getContainerElement().classList.add(appService.theme);
-  //overlayContainer.getContainerElement().classList.add('tropical-theme');
-  //overlayContainer.getContainerElement().classList.add('midnight-theme');
-  //overlayContainer.getContainerElement().classList.add('lush-theme');
-  //}
-
-  //ngOnInit() {
-
-  //}
-  // */
 }

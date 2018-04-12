@@ -7,6 +7,7 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 @Injectable()
 export class AppService implements OnDestroy {
 
+  readonly imgDir = '/assets/img/'
   themes = ['beach', 'tropical', 'midnight', 'lush', 'pirate', 'corp', 'tech', 'arizona'];
 
 
@@ -14,8 +15,8 @@ export class AppService implements OnDestroy {
   readonly currentTheme = this.themeSource.asObservable();
   public changeTheme(theme: string) { this.themeSource.next(theme) }
 
-  profileImg = ['/assets/brian-francis.jpg', '/assets/brian-francis-2.jpg'];
-  profileImgSq = ['/assets/brian-francis-sq.jpg', '/assets/brian-francis-2sq.jpg'];
+  profileImg = ['/assets/img/brian-francis.jpg', '/assets/img/brian-francis.jpg'];
+  profileImgSq = ['/assets/img/brian-francis-square.jpg', '/assets/img/brian-francis-square.jpg'];
 
   profileImgIndex = 0;
 

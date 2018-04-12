@@ -14,9 +14,9 @@ import { AppService } from '../../app.service';
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block " [src]="images[imagesIndex].src" alt="First slide" style="height: 50vh; ">
+      <img class="d-block " [src]="images[imagesIndex].src"  style="height: 50vh; ">
       <div class="carousel-caption d-none d-md-block">
-        <p class="alert alert-primary">{{images[imagesIndex]?.title}}</p>
+        <p class="alert alert-primary"><a [href]="images[imagesIndex].link" target="_blank">{{images[imagesIndex]?.title}}</a></p>
       </div>
     </div>
   </div>
@@ -38,17 +38,13 @@ import { AppService } from '../../app.service';
 })
 export class ImgViewerDialog {
   title: '';
-  images: [{ src: '', title: '' }];
+  images: [{ src: '', title: '', link: '' }];
   imagesIndex = 0;
 
   constructor(public dialogRef: MatDialogRef<ImgViewerDialog>, @Inject(MAT_DIALOG_DATA) public data: any) {
     this.images = data.images;
     this.title = data.title;
 
-  }
-
-  clicky(i) {
-    console.log(i);
   }
 
   nextImg() { this.imagesIndex = ((this.imagesIndex + 1) >= this.images.length) ? 0 : (this.imagesIndex + 1) }
