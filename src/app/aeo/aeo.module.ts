@@ -6,6 +6,7 @@ import { AeoViewPort } from './view-port';
 import { MatIconModule, MatListModule, MatButtonModule, MatTooltipModule } from '@angular/material';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CapitalizePipe } from './capitalize/capitalize.pipe';
 
 @NgModule({
   imports: [
@@ -16,8 +17,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatTooltipModule,
     BrowserAnimationsModule
   ],
-  declarations: [AeoSideDrawer, AeoViewPort],
-  exports: [AeoSideDrawer, AeoViewPort]
+  declarations: [AeoSideDrawer, AeoViewPort, CapitalizePipe],
+  exports: [AeoSideDrawer, AeoViewPort, CapitalizePipe]
 })
 export class AeoModule {
 }

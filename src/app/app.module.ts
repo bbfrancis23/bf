@@ -21,7 +21,7 @@ import { AppService } from './app.service';
 
 import { OverlayContainer } from '@angular/cdk/overlay';
 
-import { CapitalizePipe } from './aeo/capitalize.pipe';
+
 
 @NgModule({
   declarations: [
@@ -29,8 +29,7 @@ import { CapitalizePipe } from './aeo/capitalize.pipe';
     BrianFrancisComponent,
     BrianFrancisProfile,
     SettingsDialog,
-    ImgViewerDialog,
-    CapitalizePipe
+    ImgViewerDialog
   ],
   imports: [
     BrowserModule,
