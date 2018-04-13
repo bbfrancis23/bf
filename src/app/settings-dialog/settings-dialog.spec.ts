@@ -2,11 +2,9 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { Component } from '@angular/core';
 
 import { SettingsDialog } from './settings-dialog';
-
-import { AeoModule } from '../../aeo/aeo.module';
+import { AeoModule } from '../aeo/aeo.module';
 import { MatTooltipModule, MatDialogModule, MatIconModule } from '@angular/material';
-
-import { AppService } from '../../app.service';
+import { AppService } from '../app.service';
 
 describe('BrianFrancisComponent', () => {
   let component: SettingsDialog;

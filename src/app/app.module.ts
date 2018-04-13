@@ -12,7 +12,7 @@ import { AeoModule } from './aeo/aeo.module';
 import { BrianFrancisComponent } from './brian-francis/brian-francis.component';
 import { BrianFrancisProfile } from './brian-francis/profile/profile';
 
-import { SettingsDialog } from './brian-francis/settings-dialog/settings-dialog';
+import { SettingsDialog } from './settings-dialog/settings-dialog';
 import { ImgViewerDialog } from './brian-francis/img-viewer-dialog/img-viewer-dialog';
 
 import { LayoutModule } from '@angular/cdk/layout';

@@ -1,4 +1,4 @@
-/*import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AeoSideDrawer } from './side-drawer';
 
@@ -23,4 +23,3 @@ describe('SideDrawerComponent', () => {
     expect(component).toBeTruthy();
   });
 });
-*/

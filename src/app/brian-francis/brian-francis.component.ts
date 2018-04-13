@@ -2,7 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Subscription } from 'rxjs/Subscription';
 import { MatDialog } from '@angular/material';
-import { SettingsDialog } from './settings-dialog/settings-dialog';
+import { SettingsDialog } from '../settings-dialog/settings-dialog';
 import { ImgViewerDialog } from './img-viewer-dialog/img-viewer-dialog';
 import { MatDialogRef, MAT_DIALOG_DATA, DialogPosition } from '@angular/material';
 
