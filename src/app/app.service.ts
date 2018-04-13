@@ -7,7 +7,7 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 @Injectable()
 export class AppService implements OnDestroy {
 
-  readonly imgDir = '/assets/img/'
+  readonly imgDir = '/assets/img/';
   themes = ['beach', 'tropical', 'midnight', 'lush', 'pirate', 'corp', 'tech', 'arizona'];
 
 

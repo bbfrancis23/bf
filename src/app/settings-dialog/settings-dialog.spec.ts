@@ -6,7 +6,7 @@ import { AeoModule } from '../aeo/aeo.module';
 import { MatTooltipModule, MatDialogModule, MatIconModule } from '@angular/material';
 import { AppService } from '../app.service';
 
-describe('BrianFrancisComponent', () => {
+describe('SettingsDialog', () => {
   let component: SettingsDialog;
   let fixture: ComponentFixture<SettingsDialog>;
 
@@ -28,6 +28,5 @@ describe('BrianFrancisComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-
 
 });

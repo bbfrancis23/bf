@@ -12,14 +12,13 @@ import { AppService } from '../app.service';
       <p>Choose a Theme</p>
       <ul>
         <span *ngFor="let theme of appService.themes; let i = index">
-          <li class="settings-item" [id]="theme+'-theme-select'" (click)="appService.changeTheme(theme+'-theme'); appService.hero='/assets/img/theme/background/'+theme+'.jpg'" matTooltip="{{theme | capitalize}}"></li>
+          <li class="settings-item" [id]="theme+'-theme-select'" (click)="updateTheme(theme)" matTooltip="{{theme | capitalize}}"></li>
           <br *ngIf="i===3">
         </span>
       </ul>
       <p>Choose a Photo</p>
       <ul>
-        <li class="settings-item" (click)="appService.profileImgIndex=0;appService.changeprofileImg();"><img src="/assets/img/brian-francis.jpg"></li>
-        <li class="settings-item" (click)="appService.profileImgIndex=1;appService.changeprofileImg();"><img src="/assets/img/brian-francis-alt.jpg"></li>
+        <li class="settings-item" *ngFor="let img of appService.profileImg; let i = index" (click)="updateProfileImage(i)"><img [src]="img"></li>
       </ul>
       <br>
     </mat-dialog-content>
@@ -29,4 +28,14 @@ import { AppService } from '../app.service';
 })
 export class SettingsDialog {
   constructor(public appService: AppService) { }
+
+  updateTheme(theme: string) {
+    this.appService.changeTheme(theme + '-theme');
+    this.appService.hero = `${this.appService.imgDir}theme/background/${theme}.jpg`;
+  }
+
+  updateProfileImage(i: number) {
+    this.appService.profileImgIndex = i;
+    this.appService.changeprofileImg();
+  }
 }
